@@ -1,0 +1,20 @@
+.student-container {
+    padding: 50px;
+}
+
+.image {
+    border-radius: 100px;
+    width: 10em;
+}
+
+.name {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 8px;
+}
+
+.text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}

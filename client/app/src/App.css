@@ -1,6 +1,30 @@
+.primary-bg-color {
+  background: #00bfff;
+}
+
+.primary-text-color {
+  color: white;
+}
+
+.secondary-text-color {
+  color: #00bfff;
+}
+
+.primary-font-family {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.secondary-font-family {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .App-logo {

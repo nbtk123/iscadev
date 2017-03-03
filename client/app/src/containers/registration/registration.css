@@ -1,0 +1,11 @@
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #00bfff;
+    font-size: x-large;
+    padding: 1em;
+}
+
+input[type=submit] {
+    font-size: x-large;
+    font-weight: bold;
+}

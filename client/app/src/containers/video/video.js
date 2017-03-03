@@ -13,10 +13,10 @@ class Video extends Component {
                     <div className="container">
                         <div className="row" style={{'display':'flex', 'position':'relative', 'paddingBottom':'30em'}}>
                             <div className="col-xs-8" style={{'textAlign':'left'}}>
-                                <h1>ISCA</h1>
-                                <h2>Israeli Studets Combating Antisemitism</h2>
+                                <h1 className="bold">ISCA</h1>
+                                <h2 className="secondary-font-family">Israeli Studets Combating Antisemitism</h2>
                             </div>
-                            <div className="col-xs-4" style={{'alignSelf':'flex-end'}}>
+                            <div style={{'alignSelf':'flex-end'}}>
                                 <PageButton text="READ MORE" />
                             </div>
                         </div>
