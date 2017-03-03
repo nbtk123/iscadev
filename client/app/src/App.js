@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './containers/navbar/navbar.js';
 import Video from './containers/video/video.js';
+import About from './containers/about/about.js';
 import StudentsContent from './containers/studentscontent/studentscontent.js';
 import Registration from './containers/registration/registration.js';
 
@@ -16,10 +17,13 @@ class App extends Component {
         <div className="row" style={{'paddingTop':'3.5em'}}>
           <Video />
         </div>
-        <div className="row">
+        <div id="about" className="row">
+          <About />
+        </div>
+        <div id="students" className="row">
           <StudentsContent />
         </div>
-          <div className="row">
+          <div id="register" className="row">
           <Registration />
         </div>
       </div>
