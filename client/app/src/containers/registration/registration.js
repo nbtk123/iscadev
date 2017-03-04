@@ -6,7 +6,7 @@ class Registration extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <div className="container" style={{'marginTop':'2em', 'marginBottom':'5em'}}>
+                <div className="container" style={{'marginTop':'6em', 'marginBottom':'8em'}}>
                     <div className="row secondary-text-color">
                         <h1>Join the fight!</h1>
                     </div>
@@ -22,7 +22,7 @@ class Registration extends Component {
                     </div>
                     <div className="row">
                         <div className="col-xs-2 col-xs-offset-5">
-                            <PageButton text="SUBMIT"/>
+                            <PageButton text="SUBMIT" onClick={(e) => {}}/>
                         </div>
                     </div>
                 </div>

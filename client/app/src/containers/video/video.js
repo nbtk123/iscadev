@@ -17,7 +17,7 @@ class Video extends Component {
                                 <h2 className="secondary-font-family">Israeli Studets Combating Antisemitism</h2>
                             </div>
                             <div style={{'alignSelf':'flex-end'}}>
-                                <PageButton text="READ MORE" />
+                                <PageButton text="READ MORE" onClick={(e) => window.location = window.location.origin+'#about'}/>
                             </div>
                         </div>
                     </div>

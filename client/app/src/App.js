@@ -6,24 +6,57 @@ import Video from './containers/video/video.js';
 import About from './containers/about/about.js';
 import StudentsContent from './containers/studentscontent/studentscontent.js';
 import Registration from './containers/registration/registration.js';
+import ScrollEvent from 'react-onscroll';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {highlighted:'none'}
+    this.handleScrollCallback = this.handleScrollCallback.bind(this);
+  }
+
+  isHighlighted(component) {
+    return (component.getBoundingClientRect().top < 325 && component.getBoundingClientRect().top);
+  }
+
+  handleScrollCallback() {
+      var somethingighlighted = false;
+      console.log(this.about.getBoundingClientRect());
+      if (this.isHighlighted(this.about)) {
+        somethingighlighted = true;
+        this.setState({highlighted:'about'});
+      }
+      if (this.isHighlighted(this.students)) {
+        somethingighlighted = true;
+        this.setState({highlighted:'students'});
+      }
+      if (this.isHighlighted(this.register)) {
+        somethingighlighted = true;
+        this.setState({highlighted:'register'});
+      }
+      if (!somethingighlighted) {
+        this.setState({highlighted:'none'});
+      }
+  }
+
   render() {
     return (
-      <div className="App container-fluid">
+      <div ref={node => this.page = node} className="App container-fluid">
+        <ScrollEvent handleScrollCallback={this.handleScrollCallback} />
         <div className="row">
-          <NavBar />
+          <NavBar highlighted={this.state.highlighted}/>
         </div>
-        <div className="row" style={{'paddingTop':'3.5em'}}>
+        <div ref={node => this.video = node} id="video" className="row" style={{'paddingTop':'3.5em'}}>
           <Video />
         </div>
-        <div id="about" className="row">
+        <div ref={node => this.about = node} id="about" className="row">
           <About />
         </div>
-        <div id="students" className="row">
+        <div ref={node => this.students = node} id="students" className="row">
           <StudentsContent />
         </div>
-          <div id="register" className="row">
+          <div ref={node => this.register = node} id="register" className="row">
           <Registration />
         </div>
       </div>
