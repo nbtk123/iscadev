@@ -22,7 +22,7 @@ class App extends Component {
 
   handleScrollCallback() {
       var somethingighlighted = false;
-      console.log(this.about.getBoundingClientRect());
+      
       if (this.isHighlighted(this.about)) {
         somethingighlighted = true;
         this.setState({highlighted:'about'});
