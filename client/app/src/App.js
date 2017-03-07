@@ -7,6 +7,7 @@ import About from './containers/about/about.js';
 import StudentsContent from './containers/studentscontent/studentscontent.js';
 import Registration from './containers/registration/registration.js';
 import ScrollEvent from 'react-onscroll';
+import ISCAFacebook from './containers/facebook/facebook.js'
 
 class App extends Component {
 
@@ -50,8 +51,13 @@ class App extends Component {
         <div ref={node => this.video = node} id="video" className="row" style={{'paddingTop':'3.5em'}}>
           <Video />
         </div>
-        <div ref={node => this.about = node} id="about" className="row">
-          <About />
+        <div ref={node => this.about = node} id="about" className="row" style={{'display':'flex', 'alignItems':'center'}}>
+          <div className="col-xs-7">
+            <About />
+          </div>
+          <div className="col-xs-5" style={{'display':'flex', 'alignItems':'center'}}>
+              <ISCAFacebook />
+          </div>
         </div>
         <div ref={node => this.students = node} id="students" className="row">
           <StudentsContent />
