@@ -32,10 +32,10 @@ class Team extends Component {
             <div className="container-fluid team-container">
                 <div className="row">
                     {
-                        this.state.team.map((student, i) => {
+                        this.state.team.map((member, i) => {
                             return (
                                 <div className="col-xs-4" key={i}>
-                                    <TeamMember {...student}/>
+                                    <TeamMember {...member}/>
                                 </div>
                             );
                         })

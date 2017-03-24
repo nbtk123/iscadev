@@ -9,7 +9,9 @@ class NavBar extends Component {
             <nav className="navbar navbar-default navbar-fixed-top" style={{display:'flex', 'flexDirection':'column', 'justifyContent':'center'}}>
                 <div className="container">
                     <div className="row" style={{'display':'flex','justifyContent':'flex-end'}}>
-                        <div className="col-xs-2" style={{'marginRight':'auto'}}>LOGO</div>
+                        <div className="col-xs-2" style={{'marginRight':'auto'}}>
+                            <img src="http://isca-org.com/wp-content/uploads/2014/12/isca-logo.png" height="35em"/>
+                        </div>
                         <div className="col-xs-1">
                             <NavbarLink text="About" link="#about" highlighted={this.props.highlighted === 'about'}/>
                         </div>
