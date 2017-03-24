@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './containers/navbar/navbar.js';
+
 import Video from './containers/video/video.js';
 import About from './containers/about/about.js';
 import Team from './containers/team/team.js';
@@ -13,7 +13,6 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {highlighted:'none'}
     this.handleScrollCallback = this.handleScrollCallback.bind(this);
   }
 
@@ -26,18 +25,18 @@ class App extends Component {
       
       if (this.isHighlighted(this.about)) {
         somethingighlighted = true;
-        this.setState({highlighted:'about'});
+        this.props.route.onHighlightChanged({highlighted:'about'});
       }
       if (this.isHighlighted(this.team)) {
         somethingighlighted = true;
-        this.setState({highlighted:'team'});
+        this.props.route.onHighlightChanged({highlighted:'team'});
       }
       if (this.isHighlighted(this.contactus)) {
         somethingighlighted = true;
-        this.setState({highlighted:'contactus'});
+        this.props.route.onHighlightChanged({highlighted:'contactus'});
       }
       if (!somethingighlighted) {
-        this.setState({highlighted:'none'});
+        this.props.route.onHighlightChanged({highlighted:'none'});
       }
   }
 
@@ -45,9 +44,6 @@ class App extends Component {
     return (
       <div ref={node => this.page = node} className="App container-fluid">
         <ScrollEvent handleScrollCallback={this.handleScrollCallback} />
-        <div className="row">
-          <NavBar highlighted={this.state.highlighted}/>
-        </div>
         <div ref={node => this.video = node} id="video" className="row" style={{'paddingTop':'3.5em'}}>
           <Video />
         </div>

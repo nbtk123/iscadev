@@ -3,8 +3,17 @@ import './navbarlink.css';
 
 class NavbarLink extends Component {
     render() {
+
+        const style={
+            'color': this.props.highlighted ? '#00bfff' : '',
+            'display': 'flex',
+            'alignContent': 'center',
+            'justifyContent': 'flex-end',
+            'flexDirection': 'column'
+        };
+
         return (
-            <a href={this.props.link} className="navbar-link" style={this.props.highlighted ? {'color':'#00bfff'} : {}}>
+            <a href={this.props.link} className="navbar-link" style={style}>
                 {this.props.text}
             </a>
         );

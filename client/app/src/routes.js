@@ -11,12 +11,16 @@ class Routes extends Component {
     render() {
         return (
             <Router history={browserHistory }>
-                <Route path="/" component={App} />
-                <Route path="/register" component={Registration} />
-                <Route path="*" component={NotFound} />
+                <Route path="/" onHighlightChanged={this.props.onHighlightChanged} component={App} />
+                <Route path="/register" onHighlightChanged={this.props.onHighlightChanged} component={Registration} />
+                <Route path="*" onHighlightChanged={this.props.onHighlightChanged} component={NotFound} />
             </Router>
         );
     }
 }
+
+Routes.propTypes = {
+  onHighlightChanged: React.PropTypes.func.isRequired,
+};
 
 export default Routes;
