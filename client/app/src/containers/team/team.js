@@ -1,13 +1,13 @@
 import React, { Component, PropTypes } from 'react';
-import Student from './student.js';
-import './studentscontent.css';
+import TeamMember from './teammember.js';
+import './team.css';
 
-class StudentsContent extends Component {
+class Team extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            students: [
+            team: [
                 {
                     name: "Nir",
                     text: "Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good.",
@@ -29,13 +29,13 @@ class StudentsContent extends Component {
 
     render() {
         return (
-            <div className="container-fluid students-container">
+            <div className="container-fluid team-container">
                 <div className="row">
                     {
-                        this.state.students.map((student, i) => {
+                        this.state.team.map((student, i) => {
                             return (
                                 <div className="col-xs-4" key={i}>
-                                    <Student {...student}/>
+                                    <TeamMember {...student}/>
                                 </div>
                             );
                         })
@@ -46,8 +46,8 @@ class StudentsContent extends Component {
     }
 }
 
-StudentsContent.propTypes = {
+Team.propTypes = {
 
 };
 
-export default StudentsContent;
+export default Team;

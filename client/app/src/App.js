@@ -4,8 +4,8 @@ import './App.css';
 import NavBar from './containers/navbar/navbar.js';
 import Video from './containers/video/video.js';
 import About from './containers/about/about.js';
-import StudentsContent from './containers/studentscontent/studentscontent.js';
-import Registration from './containers/registration/registration.js';
+import Team from './containers/team/team.js';
+import ContactUs from './containers/contactus/contactus.js';
 import ScrollEvent from 'react-onscroll';
 import ISCAFacebook from './containers/facebook/facebook.js'
 
@@ -28,13 +28,13 @@ class App extends Component {
         somethingighlighted = true;
         this.setState({highlighted:'about'});
       }
-      if (this.isHighlighted(this.students)) {
+      if (this.isHighlighted(this.team)) {
         somethingighlighted = true;
-        this.setState({highlighted:'students'});
+        this.setState({highlighted:'team'});
       }
-      if (this.isHighlighted(this.register)) {
+      if (this.isHighlighted(this.contactus)) {
         somethingighlighted = true;
-        this.setState({highlighted:'register'});
+        this.setState({highlighted:'contactus'});
       }
       if (!somethingighlighted) {
         this.setState({highlighted:'none'});
@@ -59,11 +59,11 @@ class App extends Component {
               <ISCAFacebook />
           </div>
         </div>
-        <div ref={node => this.students = node} id="students" className="row">
-          <StudentsContent />
+        <div ref={node => this.team = node} id="team" className="row">
+          <Team />
         </div>
-          <div ref={node => this.register = node} id="register" className="row">
-          <Registration />
+          <div ref={node => this.contactus = node} id="contactus" className="row">
+          <ContactUs />
         </div>
       </div>
     );

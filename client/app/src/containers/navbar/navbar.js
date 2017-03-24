@@ -14,10 +14,10 @@ class NavBar extends Component {
                             <NavbarLink text="About" link="#about" highlighted={this.props.highlighted === 'about'}/>
                         </div>
                         <div className="col-xs-1">
-                            <NavbarLink text="Students" link="#students" highlighted={this.props.highlighted === 'students'}/>
+                            <NavbarLink text="Team" link="#team" highlighted={this.props.highlighted === 'team'}/>
                         </div>
                         <div className="col-xs-1">
-                            <NavbarLink text="Register" link="#register" highlighted={this.props.highlighted === 'register'}/>
+                            <NavbarLink text="Contact" link="#contactus" highlighted={this.props.highlighted === 'contactus'}/>
                         </div>
                     </div>
                 </div>

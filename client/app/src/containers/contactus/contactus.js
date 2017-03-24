@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import PageButton from '../../components/pagebutton/pagebutton.js';
-import './registration.css';
+import './contactus.css';
 
-class Registration extends Component {
+class ContactUs extends Component {
 
     constructor(props) {
         super(props);
@@ -13,7 +13,8 @@ class Registration extends Component {
 
         this.state = {
             name: '',
-            email: ''
+            email: '',
+            message: '',
         }
     }
 
@@ -23,7 +24,8 @@ class Registration extends Component {
 
         this.setState({
             name: '',
-            email: ''
+            email: '',
+            message: '',
         });
     }
 
@@ -35,12 +37,16 @@ class Registration extends Component {
         this.setState({email: event.target.value});
     }
 
+    handleMessageOnChange(event) {
+        this.setState({message: event.target.value});
+    }
+
     render() {
         return (
             <form>
                 <div className="container" style={{'marginTop':'6em', 'marginBottom':'8em'}}>
                     <div className="row secondary-text-color">
-                        <h1>Join the fight!</h1>
+                        <h1>Contact Us</h1>
                     </div>
                     <div className="row" style={{'marginTop':'2em'}}>
                         <div className="col-xs-4 col-xs-offset-4 form-group">
@@ -50,6 +56,11 @@ class Registration extends Component {
                     <div className="row">
                         <div className="col-xs-4 col-xs-offset-4 form-group">
                             <input type="text" value={this.state.email} onChange={this.handleEmailOnChange} placeholder="your@email.com" className="form-control secondary-font-family"/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-xs-4 col-xs-offset-4 form-group">
+                            <textarea rows="10" value={this.state.message} onChange={this.handleMessageOnChange} placeholder="Your message" className="form-control secondary-font-family"/>
                         </div>
                     </div>
                     <div className="row">
@@ -63,8 +74,8 @@ class Registration extends Component {
     }
 }
 
-Registration.propTypes = {
+ContactUs.propTypes = {
 
 };
 
-export default Registration;
+export default ContactUs;
