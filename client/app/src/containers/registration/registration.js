@@ -8,12 +8,13 @@ class Registration extends Component {
         super(props);
 
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleEmailOnChange = this.handleEmailOnChange.bind(this);
-        this.handleNameOnChange = this.handleNameOnChange.bind(this);
+        this.handleOnChange = this.handleOnChange.bind(this);
 
         this.state = {
-            name: '',
+            firstName: '',
+            lastName: '',
             email: '',
+            id: '',
             message: '',
         }
     }
@@ -23,44 +24,50 @@ class Registration extends Component {
         //TODO: send form to API
 
         this.setState({
-            name: '',
+            firstName: '',
+            lastName: '',
             email: '',
+            id: '',
             message: '',
         });
     }
 
-    handleNameOnChange(event) {
-        this.setState({name: event.target.value});
-    }
+    handleOnChange(event) {
+        const target = event.target;
+        const name = target.name;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        
+        console.log([name], value);
 
-    handleEmailOnChange(event) {
-        this.setState({email: event.target.value});
-    }
-
-    handleMessageOnChange(event) {
-        this.setState({message: event.target.value});
+        this.setState({[name]: value});
     }
 
     render() {
         return (
-            <form>
+            <form style={{'direction':'rtl'}}>
                 <div className="container" style={{'marginTop':'6em', 'marginBottom':'8em'}}>
                     <div className="row secondary-text-color" style={{textAlign:'center'}}>
-                        <h1>Register</h1>
+                        <h1>טופס הרשמה לתכנית ISCA</h1>
                     </div>
                     <div className="row" style={{'marginTop':'2em'}}>
+                        <div className="col-xs-offset-4 col-xs-4 form-group">
+                            שם משפחה: <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleOnChange} placeholder="שם משפחה" className="form-control secondary-font-family"/>
+                        </div>
                         <div className="col-xs-4 form-group">
-                            Your name: <input type="text" value={this.state.name} onChange={this.handleNameOnChange} placeholder="Name" className="form-control secondary-font-family"/>
+                            שם פרטי: <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleOnChange} placeholder="שם פרטי" className="form-control secondary-font-family"/>
                         </div>
                     </div>
                     <div className="row">
+                        <div className="col-xs-offset-4 col-xs-4 form-group">
+                            תעודת זהות: <input type="text" name="id" value={this.state.id} onChange={this.handleOnChange} placeholder="123456789" className="form-control secondary-font-family" style={{'direction':'ltr'}}/>
+                        </div>
                         <div className="col-xs-4 form-group">
-                            Your email: <input type="text" value={this.state.email} onChange={this.handleEmailOnChange} placeholder="your@email.com" className="form-control secondary-font-family"/>
+                            כתובת מייל: <input type="text" name="email" value={this.state.email} onChange={this.handleOnChange} placeholder="your@email.com" className="form-control secondary-font-family" style={{'direction':'ltr'}}/>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-xs-8 form-group">
-                            About yourself: <textarea rows="10" value={this.state.message} onChange={this.handleMessageOnChange} placeholder="Your message" className="form-control secondary-font-family"/>
+                        <div className="col-xs-offset-4 col-xs-8 form-group">
+                            About yourself: <textarea rows="10" value={this.state.message} onChange={this.handleOnChange} placeholder="Your message" className="form-control secondary-font-family"/>
                         </div>
                     </div>
                     <div className="row">
