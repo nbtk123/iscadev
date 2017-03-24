@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import FacebookProvider, { Page } from 'react-facebook';
+import FacebookProvider, { Page } from 'react-facebook'; // https://github.com/CherryProjects/react-facebook
 import './facebook.css';
 
 class ISCAFacebook extends Component {
