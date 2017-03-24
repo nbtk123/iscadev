@@ -11,10 +11,10 @@ class ISCAFacebook extends Component {
                         <Page href="https://www.facebook.com/ISCAorg/"
                             width="500"
                             height="700"
-                            hideCover="true"
-                            adaptContainerWidth="true"
-                            smallHeader="true"
-                            showFacepile="false"/>
+                            hideCover={true}
+                            adaptContainerWidth={true}
+                            smallHeader={true}
+                            showFacepile={false}/>
                     </FacebookProvider>
                 </div>
             </div>

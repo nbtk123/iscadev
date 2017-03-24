@@ -32,9 +32,9 @@ class StudentsContent extends Component {
             <div className="container-fluid students-container">
                 <div className="row">
                     {
-                        this.state.students.map((student) => {
+                        this.state.students.map((student, i) => {
                             return (
-                                <div className="col-xs-4">
+                                <div className="col-xs-4" key={i}>
                                     <Student {...student}/>
                                 </div>
                             );
