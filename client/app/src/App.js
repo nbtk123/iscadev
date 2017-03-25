@@ -4,7 +4,7 @@ import './App.css';
 
 import Video from './containers/video/video.js';
 import About from './containers/about/about.js';
-import Team from './containers/team/team.js';
+import PersonGrid from './components/persongrid/persongrid.js'
 import ContactUs from './containers/contactus/contactus.js';
 import ScrollEvent from 'react-onscroll';
 import ISCAFacebook from './containers/facebook/facebook.js'
@@ -14,6 +14,25 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.handleScrollCallback = this.handleScrollCallback.bind(this);
+    this.state = {
+      team: [
+                {
+                    name: "Nir",
+                    text: "Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good.",
+                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
+                },
+                {
+                    name: "Nir",
+                    text: "Yolo is great. Yolo is great. Yolo is great. Yolo is great. Yolo is great. Yolo is great.",
+                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
+                },
+                {
+                    name: "Nir",
+                    text: "Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome.",
+                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
+                },
+            ],
+    }
   }
 
   isHighlighted(component) {
@@ -56,7 +75,7 @@ class App extends Component {
           </div>
         </div>
         <div ref={node => this.team = node} id="team" className="row">
-          <Team />
+          <PersonGrid persons={this.state.team} howMuchInLine="3" />
         </div>
           <div ref={node => this.contactus = node} id="contactus" className="row">
           <ContactUs />
