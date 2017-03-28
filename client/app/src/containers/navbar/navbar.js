@@ -21,6 +21,12 @@ class NavBar extends Component {
                         <div className="col-xs-1 navbar-link-container">
                             <NavbarLink text="Contact" link="/#contactus" highlighted={this.props.highlighted === 'contactus'}/>
                         </div>
+                        <div className="col-xs-1 navbar-link-container">
+                            <NavbarLink text="Register" link="/register" highlighted={this.props.highlighted === 'register'}/>
+                        </div>
+                        <div className="col-xs-1 navbar-link-container">
+                            <NavbarLink text="Volunteers" link="/volunteers" highlighted={this.props.highlighted === 'volunteers'}/>
+                        </div>
                     </div>
                 </div>
             </nav>

@@ -79,6 +79,7 @@ class Volunteers extends Component {
     }
 
     render() {
+        this.props.route.onHighlightChanged({highlighted:'volunteers'});
         return (
             <div className="container-fluid">
                 <div className="col-xs-12">

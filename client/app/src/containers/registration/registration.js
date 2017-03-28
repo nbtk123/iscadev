@@ -63,6 +63,7 @@ class Registration extends Component {
     }
 
     render() {
+        this.props.route.onHighlightChanged({highlighted:'register'});
         return (
             <form style={{'direction':'rtl'}}>
                 <div className="container" style={{'marginTop':'6em', 'marginBottom':'8em'}}>
