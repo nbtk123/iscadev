@@ -12,12 +12,12 @@ class Video extends Component {
                 <div className="video-overlay-text">
                     <div className="container">
                         <div className="row" style={{'display':'flex', 'position':'relative', 'paddingBottom':'30em'}}>
-                            <div className="col-xs-8" style={{'textAlign':'left'}}>
+                            <div className="col-xs-8" style={{'textAlign':'right'}}>
                                 <h1 className="bold">ISCA</h1>
-                                <h2 className="secondary-font-family">Israeli Studets Combating Antisemitism</h2>
+                                <h2 className="secondary-font-family">סטודנטים ישראלים נלחמים באנטישמיות</h2>
                             </div>
                             <div style={{'alignSelf':'flex-end'}}>
-                                <PageButton text="READ MORE" onClick={(e) => window.location = window.location.origin+'#about'}/>
+                                <PageButton text="קרא/י עוד" onClick={(e) => window.location = window.location.origin+'#about'}/>
                             </div>
                         </div>
                     </div>

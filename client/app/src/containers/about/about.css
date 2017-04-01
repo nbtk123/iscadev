@@ -1,5 +1,6 @@
 .about {
     padding: 3em;
     color: rgba(0, 0, 0, 0.3);
-    text-align: left;
+    text-align: right;
+    direction: rtl
 }

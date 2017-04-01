@@ -5,88 +5,87 @@ class Volunteers extends Component {
 
     constructor(props) {
         super(props);
+
+        this.onAddStudentClicked = this.onAddStudentClicked.bind(this);
+        this.onAddAlumniClicked = this.onAddAlumniClicked.bind(this);
+
         this.state = {
             students: [
-              {
-                    name: "Nir",
-                    text: "Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good.",
+                {
+                    name: "יושימיצו",
+                    text: "סטודנט בבינלאומי שהולך עם חרב סמוראי צמודה",
                     imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
                 },
                 {
-                    name: "Nir",
-                    text: "Yolo is great. Yolo is great. Yolo is great. Yolo is great. Yolo is great. Yolo is great.",
+                    name: "יושימיצו",
+                    text: "סטודנט בבינלאומי שהולך עם חרב סמוראי צמודה",
                     imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
                 },
                 {
-                    name: "Nir",
-                    text: "Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome.",
+                    name: "יושימיצו",
+                    text: "סטודנט בבינלאומי שהולך עם חרב סמוראי צמודה",
                     imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
                 },
                 {
-                    name: "Nir",
-                    text: "Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good.",
+                    name: "יושימיצו",
+                    text: "סטודנט בבינלאומי שהולך עם חרב סמוראי צמודה",
                     imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
                 },
                 {
-                    name: "Nir",
-                    text: "Yolo is great. Yolo is great. Yolo is great. Yolo is great. Yolo is great. Yolo is great.",
-                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
-                },
-                {
-                    name: "Nir",
-                    text: "Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome.",
-                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
-                },
-                {
-                    name: "Nir",
-                    text: "Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome.",
-                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
-                },
-                {
-                    name: "Nir",
-                    text: "Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome.",
-                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
-                },
-                {
-                    name: "Nir",
-                    text: "Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome.",
+                    name: "יושימיצו",
+                    text: "סטודנט בבינלאומי שהולך עם חרב סמוראי צמודה",
                     imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
                 },
             ],
             alumnis: [
                 {
-                    name: "Nir",
-                    text: "Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good.",
+                    name: "יושימיצו",
+                    text: "סטודנט בבינלאומי שהולך עם חרב סמוראי צמודה",
                     imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
-                },
-                {
-                    name: "Nir",
-                    text: "Yolo is great. Yolo is great. Yolo is great. Yolo is great. Yolo is great. Yolo is great.",
-                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
-                },
-                {
-                    name: "Nir",
-                    text: "Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome.",
-                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
-                },
-                {
-                    name: "Nir",
-                    text: "Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good.",
+                },{
+                    name: "יושימיצו",
+                    text: "סטודנט בבינלאומי שהולך עם חרב סמוראי צמודה",
                     imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
                 },
             ],
         }
     }
 
-    render() {
+    componentWillMount() {
         this.props.route.onHighlightChanged({highlighted:'volunteers'});
+    }
+
+    onAddStudentClicked(event) {
+        var students = [...this.state.students, {
+            imgsrc: "",
+            name: "",
+            text: ""
+        }];
+        
+        this.setState({students: students   });
+    }
+
+    onAddAlumniClicked(event) {
+        var alumnis = [...this.state.alumnis, {
+            imgsrc: "",
+            name: "",
+            text: ""
+        }];
+        
+        this.setState({alumnis: alumnis   });
+    }
+
+    render() {
+
+        const isEdit = this.props.route.path === '/volunteers/edit'
+
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" dir="rtl">
                 <div className="col-xs-12">
                     <h1>סטודנטים פעילים</h1>
-                    <PersonGrid persons={this.state.students} howMuchInLine="4"/>
+                    <PersonGrid persons={this.state.students} howMuchInLine="4" isEdit={isEdit} onAddPersonClicked={this.onAddStudentClicked}/>
                     <h1>בוגרים</h1>
-                    <PersonGrid persons={this.state.alumnis} howMuchInLine="4"/>
+                    <PersonGrid persons={this.state.alumnis} howMuchInLine="4" isEdit={isEdit} onAddPersonClicked={this.onAddAlumniClicked}/>
                 </div>
             </div>
         );

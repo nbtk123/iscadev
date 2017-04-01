@@ -6,26 +6,26 @@ class NavBar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-default navbar-fixed-top" style={{display:'flex', 'flexDirection':'column', 'justifyContent':'center'}}>
+            <nav className="navbar navbar-default navbar-fixed-top" style={{display:'flex', 'flexDirection':'column', 'justifyContent':'center'}} dir="ltr">
                 <div className="container">
                     <div className="row" style={{'display':'flex','justifyContent':'flex-end'}}>
                         <div className="col-xs-2" style={{'marginRight':'auto'}}>
                             <img src="http://isca-org.com/wp-content/uploads/2014/12/isca-logo.png" height="40em"/>
                         </div>
                         <div className="col-xs-1 navbar-link-container">
-                            <NavbarLink text="About" link="/#about" highlighted={this.props.highlighted === 'about'}/>
+                            <NavbarLink text="מתנדבים" link="/volunteers" highlighted={this.props.highlighted === 'volunteers'}/>
                         </div>
                         <div className="col-xs-1 navbar-link-container">
-                            <NavbarLink text="Team" link="/#team" highlighted={this.props.highlighted === 'team'}/>
+                            <NavbarLink text="הרשמה" link="/register" highlighted={this.props.highlighted === 'register'}/>
                         </div>
                         <div className="col-xs-1 navbar-link-container">
-                            <NavbarLink text="Contact" link="/#contactus" highlighted={this.props.highlighted === 'contactus'}/>
+                            <NavbarLink text="צרו קשר" link="/#contactus" highlighted={this.props.highlighted === 'contactus'}/>
                         </div>
                         <div className="col-xs-1 navbar-link-container">
-                            <NavbarLink text="Register" link="/register" highlighted={this.props.highlighted === 'register'}/>
+                            <NavbarLink text="הצוות" link="/#team" highlighted={this.props.highlighted === 'team'}/>
                         </div>
                         <div className="col-xs-1 navbar-link-container">
-                            <NavbarLink text="Volunteers" link="/volunteers" highlighted={this.props.highlighted === 'volunteers'}/>
+                            <NavbarLink text="אודותינו" link="/#about" highlighted={this.props.highlighted === 'about'}/>
                         </div>
                     </div>
                 </div>

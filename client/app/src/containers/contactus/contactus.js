@@ -46,11 +46,11 @@ class ContactUs extends Component {
             <form>
                 <div className="container" style={{'marginTop':'6em', 'marginBottom':'8em'}}>
                     <div className="row secondary-text-color">
-                        <h1>Contact Us</h1>
+                        <h1>יצירת קשר</h1>
                     </div>
-                    <div className="row" style={{'marginTop':'2em'}}>
+                    <div className="row" style={{'marginTop':'2em'}} dir="rtl">
                         <div className="col-xs-4 col-xs-offset-4 form-group">
-                            <input type="text" value={this.state.name} onChange={this.handleNameOnChange} placeholder="Name" className="form-control secondary-font-family"/>
+                            <input type="text" value={this.state.name} onChange={this.handleNameOnChange} placeholder="שם" className="form-control secondary-font-family"/>
                         </div>
                     </div>
                     <div className="row">
@@ -58,14 +58,14 @@ class ContactUs extends Component {
                             <input type="text" value={this.state.email} onChange={this.handleEmailOnChange} placeholder="your@email.com" className="form-control secondary-font-family"/>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row" dir="rtl">
                         <div className="col-xs-4 col-xs-offset-4 form-group">
-                            <textarea rows="10" value={this.state.message} onChange={this.handleMessageOnChange} placeholder="Your message" className="form-control secondary-font-family"/>
+                            <textarea rows="10" value={this.state.message} onChange={this.handleMessageOnChange} placeholder="הודעה" className="form-control secondary-font-family"/>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-xs-2 col-xs-offset-5">
-                            <PageButton text="SUBMIT" onClick={(e) => this.handleSubmit(e)}/>
+                            <PageButton text="שלח/י" onClick={(e) => this.handleSubmit(e)}/>
                         </div>
                     </div>
                 </div>

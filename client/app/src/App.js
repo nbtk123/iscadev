@@ -17,18 +17,18 @@ class App extends Component {
     this.state = {
       team: [
                 {
-                    name: "Nir",
-                    text: "Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good. Yolo is good.",
+                    name: "רועי",
+                    text: "סטודנט למשפטים ומנהל עסקים בבינתחומי, מקים התוכנית בלה בלה בלה",
                     imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
                 },
                 {
-                    name: "Nir",
-                    text: "Yolo is great. Yolo is great. Yolo is great. Yolo is great. Yolo is great. Yolo is great.",
+                    name: "שיראל",
+                    text: "סטודנטית למשה-משהו בבינתחומי, תפקידה בלה בלה בלה",
                     imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
                 },
                 {
-                    name: "Nir",
-                    text: "Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome. Yolo is awesome.",
+                    name: "מישהו",
+                    text: "שרה שרה שיר שמח גנן גידל דגן בגן",
                     imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
                 },
             ],

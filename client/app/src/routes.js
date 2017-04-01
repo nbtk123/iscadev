@@ -15,6 +15,7 @@ class Routes extends Component {
                 <Route path="/" onHighlightChanged={this.props.onHighlightChanged} component={App} />
                 <Route path="/register" onHighlightChanged={this.props.onHighlightChanged} component={Registration} />
                 <Route path="/volunteers" onHighlightChanged={this.props.onHighlightChanged} component={Volunteers} />
+                <Route path="/volunteers/edit" onHighlightChanged={this.props.onHighlightChanged} component={Volunteers} />
                 <Route path="*" onHighlightChanged={this.props.onHighlightChanged} component={NotFound} />
             </Router>
         );

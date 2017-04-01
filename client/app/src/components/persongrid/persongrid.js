@@ -1,23 +1,34 @@
 import React, { Component, PropTypes } from 'react';
 import Person from './person.js';
+import AddPersonBtn from './addpersonbtn.js'
 import './persongrid.css';
 
 class PersonGrid extends Component {
 
+    constructor(props) {
+        super(props);
+    }
+
     render() {
-        const className = 'col-xs-' + 12/this.props.howMuchInLine;
-        console.log(className);
+        var className = 'col-xs-' + 12/this.props.howMuchInLine;
+
         return (
-            <div className="container-fluid persons-container">
-                <div className="row">
+            <div className="container-fluid persons-container right">
+                <div className="row" dir="rtl">
                     {
                         this.props.persons.map((person, i) => {
                             return (
                                 <div className={className} key={i}>
-                                    <Person {...person}/>
+                                    <Person {...person} isEdit={this.props.isEdit}/>
                                 </div>
                             );
                         })
+                    }
+                    {
+                        this.props.isEdit && 
+                            (
+                                <AddPersonBtn onClick={this.props.onAddPersonClicked}/>
+                            )
                     }
                 </div>
             </div>
@@ -27,7 +38,9 @@ class PersonGrid extends Component {
 
 PersonGrid.propTypes = {
     persons: React.PropTypes.array.isRequired,
-    howMuchInLine: React.PropTypes.string.isRequired
+    howMuchInLine: React.PropTypes.string.isRequired,
+    isEdit: React.PropTypes.bool.isRequired,
+    onAddPersonClicked: React.PropTypes.func.isRequired,
 };
 
 export default PersonGrid;
