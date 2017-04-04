@@ -1,21 +1,44 @@
 .person-container {
-    padding: 50px;
-    height: 30em;
+    height: 20em;
+    width: 27em;
+    border: 0.2em;
+    border-color: #00bfff;
+    border-style: solid;
+    border-radius: 1em;
 }
 
 .image {
-    border-radius: 100px;
+    float: left;
     width: 10em;
+    border: 0.2em;
+    border-right-color: #00bfff;
+    border-right-style: solid;
+    border-bottom-color: #00bfff;
+    border-bottom-style: solid;
+    border-radius: 1em;
 }
 
 .name {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    color: white;
-    margin: 8px;
+    margin-right: 0.5em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
 
 .text {
+    height: 3em;
+    width: 100%;
     font-family: 'Open Sans Condensed', sans-serif;
-    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+}
+
+.bottom-line {
+    background-color: #00bfff;
+    height: 1em;
+    margin-top: 0.5em;
 }

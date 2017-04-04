@@ -1,13 +1,13 @@
 .primary-bg-color {
-  background: #00bfff;
+  background: white;
 }
 
 .primary-text-color {
-  color: white;
+  color: #00bfff;
 }
 
 .secondary-text-color {
-  color: #00bfff;
+  color: white;
 }
 
 .primary-font-family {

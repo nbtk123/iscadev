@@ -6,15 +6,20 @@ class Person extends Component {
 
         if (!this.props.isEdit) {
             return (
-                        <div className="person-container">
-                            <img src={this.props.imgsrc} className="image"/>
-                            <h2 className="name">{this.props.name}</h2>
-                            <h3 className="text">{this.props.text}</h3>
+                        <div className="container-fluid person-container primary-text-color primary-bg-color">
+                            <div className="row">
+                                <img src={this.props.imgsrc} className="image"/>
+                                <h2 className="name">{this.props.name}</h2>
+                            </div>
+                            <div className="row">
+                                <h3 className="text">{this.props.text}</h3>
+                            </div>
+                            <div className="row bottom-line"/>
                         </div>
                     );
         } else {
             return (
-                        <div className="person-container">
+                        <div className="person-container primary-text-color primary-bg-color">
                             <input type="text" name="imgsrc" placeholder="Image URL" value={this.props.imgsrc} />
                             <input type="text" name="name" placeholder="Full name" value={this.props.name} />
                             <input type="text" name="text" placeholder="Few words" value={this.props.text} />
