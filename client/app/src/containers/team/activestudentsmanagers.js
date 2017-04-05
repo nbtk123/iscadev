@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import './activestudentsmanagers.css'
 import PersonGrid from '../../components/persongrid/persongrid';
 
 class ActiveStudentsManagers extends Component {
@@ -54,11 +55,11 @@ class ActiveStudentsManagers extends Component {
 
     render() {
         return (
-            <div className="container-fluid" dir="rtl">
+            <div className="container-fluid" dir="rtl" className="asm">
                 <div className="col-xs-12">
-                    <h1>מנהלים</h1>
+                    <h1 className="asm-title">מנהלים</h1>
                     <PersonGrid persons={this.state.managers} howMuchInLine="4" />
-                    <h1>סטודנטים פעילים</h1>
+                    <h1 className="asm-title" style={{'marginTop':'1.5em'}}>סטודנטים פעילים</h1>
                     <PersonGrid persons={this.state.students} howMuchInLine="4" />
                 </div>
             </div>

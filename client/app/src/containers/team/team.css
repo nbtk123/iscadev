@@ -1,3 +1,58 @@
 .team-container {
     background: #00bfff;
 }
+
+.team-tabs .title {
+    color: white;
+    background-color: #00bfff;
+    float: right;
+    position: relative;
+    top: -0.51em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.team-tabs .ReactTabs__TabList {
+    position: relative;
+    top: -1.64em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 1.2em;
+    overflow: hidden;
+    background-color:#00bfff; 
+}
+
+.team-tabs .ReactTabs__Tab {
+    background-color:#00bfff; 
+    color: white;
+    float: right;
+    font-size: 2em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.team-tabs .ReactTabs__Tab:last-child {
+    border-right: none;
+}
+
+.team-tabs .ReactTabs__Tab a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.team-tabs .ReactTabs__Tab--selected {
+    background-color:white; 
+    color: #00bfff;
+    float: right;
+    border-bottom: 0.25em solid white;
+    font-size: 2em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    padding: 0.5em;
+}
