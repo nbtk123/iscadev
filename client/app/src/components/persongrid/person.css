@@ -1,6 +1,6 @@
 .person-container {
-    height: 20em;
-    width: 27em;
+    max-height: 20em;
+    max-width: 27em;
     border: 0.2em;
     border-color: #00bfff;
     border-style: solid;
@@ -22,10 +22,10 @@
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     margin-right: 0.5em;
+    margin-left: 0.5m;
     height: 2.5em;
     display: flex;
     align-items: center;
-    align-content: center;
 }
 
 .text {
@@ -34,11 +34,11 @@
     font-family: 'Open Sans Condensed', sans-serif;
     display: flex;
     align-items: center;
-    margin-right: 0.5em;
 }
 
 .bottom-line {
     background-color: #00bfff;
     height: 1em;
     margin-top: 0.5em;
+    margin-bottom: 0.8em;
 }

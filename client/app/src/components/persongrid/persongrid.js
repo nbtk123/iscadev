@@ -18,7 +18,7 @@ class PersonGrid extends Component {
                     {
                         this.props.persons.map((person, i) => {
                             return (
-                                <div className={className} key={i}>
+                                <div className={className} key={i} style={{'marginTop':'3em'}}>
                                     <Person {...person} isEdit={this.props.isEdit}/>
                                 </div>
                             );

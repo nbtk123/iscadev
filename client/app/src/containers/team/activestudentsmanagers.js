@@ -49,6 +49,12 @@ class ActiveStudentsManagers extends Component {
                         imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
                         iscayear: "2017"
                     },
+                    {
+                        name: "יושימיצו אישימוטו",
+                        text: "סטודנט למנהל עסקים בבית הספר הבינלאומי, שנה ב'",
+                        imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
+                        iscayear: "2017"
+                    },
                 ]
             }
         }

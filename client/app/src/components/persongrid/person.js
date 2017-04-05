@@ -11,7 +11,7 @@ class Person extends Component {
                                 <img src={this.props.imgsrc} className="image"/>
                                 <h2 className="name">{this.props.name}</h2>
                             </div>
-                            <div className="row">
+                            <div className="row" style={{'margin':'0 auto'}}>
                                 <h3 className="text">{this.props.text}</h3>
                             </div>
                             <div className="row bottom-line"/>
