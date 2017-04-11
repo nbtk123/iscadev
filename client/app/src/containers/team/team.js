@@ -8,6 +8,7 @@ class Team extends Component {
 
     componentWillMount() {
         Tabs.setUseDefaultStyles(false);
+        this.props.route.onHighlightChanged({highlighted:'about'});
     }
 
     handleSelect(index, last) {
@@ -16,7 +17,7 @@ class Team extends Component {
 
     render() {
         return (
-            <div className="container-fluid team-tabs" style={{'marginTop':'8em'}}>
+            <div className="container-fluid team-tabs" style={{'marginTop':'8em', 'padding':'0'}}>
                 <h1 className="title">
                     אודותינו
                 </h1>

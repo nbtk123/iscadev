@@ -7,6 +7,7 @@ import NotFound from './components/notfound/notfound';
 import Registration from './containers/registration/registration';
 import Volunteers from './containers/volunteers/volunteers';
 import Team from './containers/team/team';
+import Docs from './containers/docs/docs'
 
 class Routes extends Component {
     
@@ -18,6 +19,7 @@ class Routes extends Component {
                 <Route path="/team" onHighlightChanged={this.props.onHighlightChanged} component={Team} />
                 <Route path="/volunteers" onHighlightChanged={this.props.onHighlightChanged} component={Volunteers} />
                 <Route path="/volunteers/edit" onHighlightChanged={this.props.onHighlightChanged} component={Volunteers} />
+                <Route path="/docs" onHighlightChanged={this.props.onHighlightChanged} component={Docs} />
                 <Route path="*" onHighlightChanged={this.props.onHighlightChanged} component={NotFound} />
             </Router>
         );
