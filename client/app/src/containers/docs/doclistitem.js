@@ -5,15 +5,17 @@ class DocListItem extends Component {
     render() {
         return (
             <div className="container doclistitem-container">
-                <div className="row">
-                    <div className="col-xs-12">
-                        <img className="doclistitem-image" src={this.props.imgsrc}/>
-                        <ul className="doclistitem-ul">
-                            <li className="doclistitem-title"><h2>{this.props.title}</h2></li>
-                            <li className="doclistitem-text">{this.props.text}</li>
-                        </ul>
+                <a className="doclistitem-href" href={this.props.link}>
+                    <div className="row">
+                        <div className="col-xs-12">
+                            <img className="doclistitem-image" src={this.props.imgsrc}/>
+                            <ul className="doclistitem-ul">
+                                <li className="doclistitem-title"><h2>{this.props.title}</h2></li>
+                                <li className="doclistitem-text">{this.props.text}</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         );
     }
