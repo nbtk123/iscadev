@@ -39,8 +39,8 @@ class PersonGrid extends Component {
 PersonGrid.propTypes = {
     persons: React.PropTypes.array.isRequired,
     howMuchInLine: React.PropTypes.string.isRequired,
-    isEdit: React.PropTypes.bool.isRequired,
-    onAddPersonClicked: React.PropTypes.func.isRequired,
+    // isEdit: React.PropTypes.bool.isRequired,
+    // onAddPersonClicked: React.PropTypes.func.isRequired,
 };
 
 export default PersonGrid;

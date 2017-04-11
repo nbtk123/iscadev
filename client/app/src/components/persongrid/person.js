@@ -33,7 +33,7 @@ Person.propTypes = {
     imgsrc: React.PropTypes.string.isRequired,
     name: React.PropTypes.string.isRequired,
     text: React.PropTypes.string.isRequired,
-    isEdit: React.PropTypes.bool.isRequired
+    // isEdit: React.PropTypes.bool.isRequired
 };
 
 export default Person;

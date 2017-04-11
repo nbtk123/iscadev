@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './team.css';
 import ActiveStudentsManagers from './activestudentsmanagers.js';
+import Alumnis from './alumnis.js'
 
 class Team extends Component {
 
@@ -33,7 +34,7 @@ class Team extends Component {
                         yolo 2
                     </TabPanel>
                     <TabPanel>
-                        yolo 3
+                        <Alumnis />
                     </TabPanel>
                     <TabPanel>
                         yolo 4
