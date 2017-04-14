@@ -13,22 +13,19 @@ class NavBar extends Component {
                             <img src="http://isca-org.com/wp-content/uploads/2014/12/isca-logo.png" height="40em"/>
                         </div>
                         <div className="col-xs-1 navbar-link-container">
-                            <NavbarLink text="מתנדבים" link="/volunteers" highlighted={this.props.highlighted === 'volunteers'}/>
+                            <NavbarLink text="צרו קשר" link="/#contactus" highlighted={this.props.highlighted === 'contactus'}/>
                         </div>
                         <div className="col-xs-1 navbar-link-container">
                             <NavbarLink text="הרשמה" link="/register" highlighted={this.props.highlighted === 'register'}/>
                         </div>
-                        <div className="col-xs-1 navbar-link-container">
-                            <NavbarLink text="צרו קשר" link="/#contactus" highlighted={this.props.highlighted === 'contactus'}/>
-                        </div>
-                        <div className="col-xs-1 navbar-link-container">
+                        {/*<div className="col-xs-1 navbar-link-container">
                             <NavbarLink text="הצוות" link="/#team" highlighted={this.props.highlighted === 'team'}/>
-                        </div>
+                        </div>*/}
                         <div className="col-xs-1 navbar-link-container">
                             <NavbarLink text="מסמכים" link="/docs" highlighted={this.props.highlighted === 'docs'}/>
                         </div>
                         <div className="col-xs-1 navbar-link-container">
-                            <NavbarLink text="אודותינו" link="/#about" highlighted={this.props.highlighted === 'about'}/>
+                            <NavbarLink text="אודותינו" link="/team" highlighted={this.props.highlighted === 'about'}/>
                         </div>
                     </div>
                 </div>

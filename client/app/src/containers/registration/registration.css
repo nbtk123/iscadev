@@ -4,3 +4,13 @@ input[type=date] {
     font-size: x-large;
     padding: 1em;
 }
+
+.registration-title {
+    color: white;
+    background-color: #00bfff;
+    position: relative;
+    top: -0.51em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-top: 1.57em;
+}
