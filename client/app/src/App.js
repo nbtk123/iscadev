@@ -77,9 +77,6 @@ class App extends Component {
         <div ref={node => this.team = node} id="team" className="row">
           <PersonGrid persons={this.state.team} howMuchInLine="3" />
         </div>
-          <div ref={node => this.contactus = node} id="contactus" className="row">
-          <ContactUs />
-        </div>
       </div>
     );
   }
