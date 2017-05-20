@@ -56,7 +56,7 @@ class App extends Component {
             <About />
           </div>
           <div className="col-xs-5" style={{'display':'flex', 'alignItems':'center'}}>
-              <ISCAFacebook />
+            <ISCAFacebook />
           </div>
         </div>
         <div className="row">

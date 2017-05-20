@@ -12,8 +12,16 @@ class NavbarLink extends Component {
             'flexDirection': 'column'
         };
 
+        const classes = ["navbar-link"];
+        if (this.props.fontawesome) {
+            classes.push(this.props.fontawesome);
+        }
+
         return (
             <a href={this.props.link} className="navbar-link" style={style}>
+                {
+                    this.props.fontawesome ? (<i className={this.props.fontawesome} style={{paddingTop:'0.2em', paddingLeft:'0.5em', paddingRight:'0.5em'}}/>) : ''
+                }
                 {this.props.text}
             </a>
         );
@@ -23,7 +31,8 @@ class NavbarLink extends Component {
 NavbarLink.propTypes = {
     text: React.PropTypes.string.isRequired,
     link: React.PropTypes.string.isRequired,
-    highlighted: React.PropTypes.bool.isRequired
+    highlighted: React.PropTypes.bool.isRequired,
+    fontawesome: React.PropTypes.string
 };
 
 export default NavbarLink;

@@ -14,7 +14,7 @@ class Video extends Component {
                         <div className="row" style={{'display':'flex', 'position':'relative', 'paddingBottom':'30em'}}>
                             <div className="col-xs-8" style={{'textAlign':'left'}}>
                                 <h1 className="bold">ISCA</h1>
-                                <h2 className="secondary-font-family">Israeli Students Compating Antisemitism</h2>
+                                <h2 className="secondary-font-family">Israeli Students Combating Antisemitism</h2>
                             </div>
                             <div style={{'alignSelf':'flex-end'}}>
                                 <PageButton text="Read More" onClick={(e) => window.location = window.location.origin+'#about'}/>
