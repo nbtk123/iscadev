@@ -1,0 +1,15 @@
+.theprogram-container {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.theprogram-boxes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theprogram-title {
+  text-align: left;
+  margin-left: 2.5em;
+}

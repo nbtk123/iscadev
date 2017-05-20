@@ -113,7 +113,7 @@ class Registration extends Component {
 
     render() {
         return (
-            <form style={{'direction':'rtl'}}>
+            <form>
                 <h1 className="registration-title">טופס הרשמה לתכנית ISCA</h1>
                 <div className="container" style={{'marginTop':'0em', 'marginBottom':'8em'}}>
                     <div className="row" style={{'marginTop':'2em'}}>

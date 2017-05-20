@@ -1,0 +1,12 @@
+.statistics-container {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistics-circle-padding {
+    margin-left: 5em;
+    margin-right: 5em;
+}

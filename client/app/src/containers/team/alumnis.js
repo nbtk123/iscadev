@@ -50,7 +50,7 @@ class Alumnis extends Component {
 
     render() {
         return (
-            <div className="container-fluid" dir="rtl">
+            <div className="container-fluid">
                 <div className="col-xs-12">
                     {
                         Object.keys(this.state.alumnis).sort().reverse().map((year, i) => {

@@ -1,0 +1,10 @@
+.video-grid-container {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

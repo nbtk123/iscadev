@@ -8,31 +8,16 @@ import PersonGrid from './components/persongrid/persongrid.js'
 import ContactUs from './containers/contactus/contactus.js';
 import ScrollEvent from 'react-onscroll';
 import ISCAFacebook from './containers/facebook/facebook.js'
+import Statistics from './containers/statistics/statistics.js';
+import TheProgram from './containers/theprogram/theprogram.js';
+import VideoGrid from './containers/videogrid/videogrid.js';
+import AfterGraduate from './containers/aftergraduate/aftergraduate.js'
 
 class App extends Component {
 
   constructor(props) {
     super(props);
     this.handleScrollCallback = this.handleScrollCallback.bind(this);
-    this.state = {
-      team: [
-                {
-                    name: "רועי",
-                    text: "סטודנט למשפטים ומנהל עסקים בבינתחומי, מקים התוכנית בלה בלה בלה",
-                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
-                },
-                {
-                    name: "שיראל",
-                    text: "סטודנטית למשה-משהו בבינתחומי, תפקידה בלה בלה בלה",
-                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
-                },
-                {
-                    name: "מישהו",
-                    text: "שרה שרה שיר שמח גנן גידל דגן בגן",
-                    imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg"
-                },
-            ],
-    }
   }
 
   isHighlighted(component) {
@@ -46,10 +31,10 @@ class App extends Component {
         somethingighlighted = true;
         this.props.route.onHighlightChanged({highlighted:'about'});
       }
-      if (this.isHighlighted(this.team)) {
-        somethingighlighted = true;
-        this.props.route.onHighlightChanged({highlighted:'team'});
-      }
+      // if (this.isHighlighted(this.team)) {
+      //   somethingighlighted = true;
+      //   this.props.route.onHighlightChanged({highlighted:'team'});
+      // }
       if (this.isHighlighted(this.contactus)) {
         somethingighlighted = true;
         this.props.route.onHighlightChanged({highlighted:'contactus'});
@@ -74,8 +59,17 @@ class App extends Component {
               <ISCAFacebook />
           </div>
         </div>
-        <div ref={node => this.team = node} id="team" className="row">
-          <PersonGrid persons={this.state.team} howMuchInLine="3" />
+        <div className="row">
+          <Statistics />
+        </div>
+        <div className="row">
+          <TheProgram />
+        </div>
+        <div className="row">
+          <VideoGrid />
+        </div>
+        <div className="row">
+          <AfterGraduate />
         </div>
       </div>
     );

@@ -1,0 +1,11 @@
+.textincircle-circle {
+  border-radius: 10em/10em;
+  border: solid 1px white;
+  width: 10em;
+  height: 10em;
+}
+
+.textincircle-bottomtextcontainer {
+    padding-left: 1em;
+    padding-right: 1em;
+}

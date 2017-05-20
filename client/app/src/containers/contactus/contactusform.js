@@ -44,7 +44,7 @@ class ContactUsForm extends Component {
         return (
             <div>
                 <form>
-                        <div className="row" style={{'marginTop':'2em'}} dir="rtl">
+                        <div className="row" style={{'marginTop':'2em'}}>
                             <div className="col-xs-4 col-xs-offset-4 form-group">
                                 <input type="text" value={this.state.name} onChange={this.handleNameOnChange} placeholder="שם" className="form-control secondary-font-family"/>
                             </div>
@@ -54,7 +54,7 @@ class ContactUsForm extends Component {
                                 <input type="text" value={this.state.email} onChange={this.handleEmailOnChange} placeholder="your@email.com" className="form-control secondary-font-family"/>
                             </div>
                         </div>
-                        <div className="row" dir="rtl">
+                        <div className="row">
                             <div className="col-xs-4 col-xs-offset-4 form-group">
                                 <textarea rows="10" value={this.state.message} onChange={this.handleMessageOnChange} placeholder="הודעה" className="form-control secondary-font-family"/>
                             </div>

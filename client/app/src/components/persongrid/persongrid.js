@@ -14,7 +14,7 @@ class PersonGrid extends Component {
 
         return (
             <div className="container-fluid persons-container right">
-                <div className="row" dir="rtl">
+                <div className="row">
                     {
                         this.props.persons.map((person, i) => {
                             return (

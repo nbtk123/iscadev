@@ -1,0 +1,31 @@
+.video-grid-item-container {
+  width: 23em;
+}
+
+.video-grid-item-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-grid-item-img-container {
+  position: absolute;
+}
+
+.video-grid-item-play-icon-container {
+  position: relative;
+}
+
+.video-grid-item-play-icon-img {
+  width: 15em;
+}
+
+.video-grid-item-text-container {
+  margin-top: 3em;
+  text-align: left;
+}
+
+.video-grid-item-main-text {
+  font-size: 2em;
+  font-weight: 900;
+}

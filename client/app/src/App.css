@@ -2,6 +2,10 @@
   background: white;
 }
 
+.secondary-bg-color {
+  background: #00bfff;
+}
+
 .primary-text-color {
   color: #00bfff;
 }

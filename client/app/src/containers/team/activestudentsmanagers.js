@@ -61,7 +61,7 @@ class ActiveStudentsManagers extends Component {
 
     render() {
         return (
-            <div className="container-fluid" dir="rtl">
+            <div className="container-fluid">
                 <div className="col-xs-12">
                     <h1>מנהלים</h1>
                     <PersonGrid persons={this.state.managers} howMuchInLine="4" />
