@@ -1,0 +1,21 @@
+.team2-ul {
+  list-style-type: none;
+}
+
+.team2-li {
+  float: left;
+}
+
+.team2-container {
+  margin-top: 8em;
+}
+
+.team2-title {
+    color: white;
+    background-color: #00bfff;
+    float: right;
+    position: relative;
+    top: -0.51em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
