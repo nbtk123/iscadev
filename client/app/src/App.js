@@ -11,7 +11,8 @@ import ISCAFacebook from './containers/facebook/facebook.js'
 import Statistics from './containers/statistics/statistics.js';
 import TheProgram from './containers/theprogram/theprogram.js';
 import VideoGrid from './containers/videogrid/videogrid.js';
-import AfterGraduate from './containers/aftergraduate/aftergraduate.js'
+import AfterGraduate from './containers/aftergraduate/aftergraduate.js';
+import PartnersPager from './containers/partnerspager/partnerspager.js';
 
 class App extends Component {
 
@@ -29,18 +30,18 @@ class App extends Component {
       
       if (this.isHighlighted(this.about)) {
         somethingighlighted = true;
-        this.props.route.onHighlightChanged({highlighted:'about'});
+        //this.props.route.onHighlightChanged({highlighted:'about'});
       }
       // if (this.isHighlighted(this.team)) {
       //   somethingighlighted = true;
       //   this.props.route.onHighlightChanged({highlighted:'team'});
       // }
-      if (this.isHighlighted(this.contactus)) {
-        somethingighlighted = true;
-        this.props.route.onHighlightChanged({highlighted:'contactus'});
-      }
+      // if (this.isHighlighted(this.contactus)) {
+      //   somethingighlighted = true;
+      //   this.props.route.onHighlightChanged({highlighted:'contactus'});
+      // }
       if (!somethingighlighted) {
-        this.props.route.onHighlightChanged({highlighted:'none'});
+        //this.props.route.onHighlightChanged({highlighted:'none'});
       }
   }
 
@@ -55,20 +56,23 @@ class App extends Component {
           <div className="col-xs-7">
             <About />
           </div>
-          <div className="col-xs-5" style={{'display':'flex', 'alignItems':'center'}}>
+          <div ref={node => this.facebook = node} className="col-xs-5" style={{'display':'flex', 'alignItems':'center'}}>
             <ISCAFacebook />
           </div>
         </div>
-        <div className="row">
+        <div className="row" ref={node => this.statistics = node}>
           <Statistics />
         </div>
-        <div className="row">
+        <div className="row" ref={node => this.theprogram = node}>
           <TheProgram />
         </div>
-        <div className="row">
+        <div className="row" ref={node => this.partners = node}>
+          <PartnersPager />
+        </div>
+        <div className="row" ref={node => this.videogrid = node}>
           <VideoGrid />
         </div>
-        <div className="row">
+        <div className="row" ref={node => this.aftergraduate = node}>
           <AfterGraduate />
         </div>
       </div>

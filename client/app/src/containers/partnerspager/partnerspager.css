@@ -1,0 +1,16 @@
+.partners-pager-image {
+  width: 200px;
+  margin: auto;
+}
+
+.partners-pager {
+  min-height: 0;
+  min-width: 0;
+  max-width: 50em;
+}
+
+.partners-pager-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

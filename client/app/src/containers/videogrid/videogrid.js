@@ -37,9 +37,9 @@ class VideoGrid extends Component {
       <div className="container-fluid video-grid-container secondary-text-color secondary-bg-color">
         <div className="row">
           {
-            this.state.videos.map(function (video) {
+            this.state.videos.map(function (video, i) {
               return (
-                <div className="col-xs-4 center-content">
+                <div className="col-xs-4 center-content" key={i}>
                   <VideoGridItem {...video}/>
                 </div>
               )
