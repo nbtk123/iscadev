@@ -3,6 +3,7 @@ var expressSession = require('express-session');
 var passport = require('passport');
 var bodyParser = require('body-parser');
 var LocalStrategy = require('passport-local').Strategy;
+var path = require("path");
 
 var app = express();
 
@@ -33,7 +34,7 @@ app.use(passport.session());
 app.get('/', function(req, res) {
     // Display the Login page with any flash message, if any
     console.log('/');
-    res.send('index');
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.get('/success', function(req, res) {
