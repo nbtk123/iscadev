@@ -9,8 +9,10 @@ class NavBar extends Component {
             <nav className="navbar navbar-default navbar-fixed-top primary-font-family" style={{display:'flex', 'flexDirection':'column', 'justifyContent':'center'}}>
                 <div className="container">
                     <div className="row" style={{'display':'flex','justifyContent':'flex-end'}}>
-                        <div className="col-xs-2" style={{'marginRight':'auto'}}>
-                            <img src="http://isca-org.com/wp-content/uploads/2014/12/isca-logo.png" height="40em"/>
+                        <div className="col-xs-2" style={{'marginRight':'auto', 'marginTop':'1em', 'marginBottom':'1em'}}>
+                            <a href="/">
+                                <img src="http://isca-org.com/wp-content/uploads/2014/12/isca-logo.png" height="50em"/>
+                            </a>
                         </div>
 
                         <ul className="navbar-menu-items-ul">

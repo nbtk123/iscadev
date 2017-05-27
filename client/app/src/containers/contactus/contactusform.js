@@ -46,7 +46,7 @@ class ContactUsForm extends Component {
                 <form>
                         <div className="row" style={{'marginTop':'2em'}}>
                             <div className="col-xs-4 col-xs-offset-4 form-group">
-                                <input type="text" value={this.state.name} onChange={this.handleNameOnChange} placeholder="שם" className="form-control secondary-font-family"/>
+                                <input type="text" value={this.state.name} onChange={this.handleNameOnChange} placeholder="Name" className="form-control secondary-font-family"/>
                             </div>
                         </div>
                         <div className="row">
@@ -56,12 +56,12 @@ class ContactUsForm extends Component {
                         </div>
                         <div className="row">
                             <div className="col-xs-4 col-xs-offset-4 form-group">
-                                <textarea rows="10" value={this.state.message} onChange={this.handleMessageOnChange} placeholder="הודעה" className="form-control secondary-font-family"/>
+                                <textarea rows="10" value={this.state.message} onChange={this.handleMessageOnChange} placeholder="Message" className="form-control secondary-font-family"/>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-xs-2 col-xs-offset-5">
-                                <PageButton text="שלח/י" onClick={(e) => this.handleSubmit(e)}/>
+                                <PageButton text="Submit" onClick={(e) => this.handleSubmit(e)}/>
                             </div>
                         </div>
                     </form>

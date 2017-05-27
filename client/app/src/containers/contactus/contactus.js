@@ -11,14 +11,14 @@ class ContactUs extends Component {
 
     render() {
         return (
-                <div className="container-fluid contactus" style={{'marginTop':'8em', 'marginBottom':'8em'}}>
+                <div className="container-fluid contactus" style={{'marginTop':'7.25em', 'marginBottom':'8em'}}>
                     <div className="row secondary-text-color">
-                        <h1 className="col-xs-12 title">יצירת קשר</h1>
+                        <h1 className="col-xs-12 title">Contact Us</h1>
                     </div>
-                    <h2 className="primary-text-color" style={{'textAlign':'center'}}>שאלות נפוצות</h2>
+                    <h2 className="primary-text-color" style={{'textAlign':'center'}}>FAQ</h2>
                     <QuestionList />
                     <hr className="faq-seperator"/>
-                    <h2 className="primary-text-color" style={{'textAlign':'center'}}>השארת הודעה</h2>
+                    <h2 className="primary-text-color" style={{'textAlign':'center'}}>Leave a message</h2>
                     <ContactUsForm />
                 </div>
         );
