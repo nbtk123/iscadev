@@ -30,14 +30,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressSession({secret: 'anything'}));
 app.use(passport.initialize());
 app.use(passport.session());
+app.use('*', express.static(path.resolve(__dirname, 'public')));
 
-app.get('/', function(req, res) {
+app.get('*', function(req, res) {
     // Display the Login page with any flash message, if any
-    console.log('/');
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
-app.get('/success', function(req, res) {
+/*app.get('/success', function(req, res) {
     // Display the Login page with any flash message, if any
     console.log(req.user);
     console.log('success');
@@ -60,7 +60,7 @@ app.get('/editorlogin', function(req, res) {
 app.post('/editorlogin',
   passport.authenticate('local', { successRedirect: '/success',
                                    failureRedirect: '/fail'})
-);
+);*/
 
 app.listen(5000, function () {
   console.log('Example app listening on port 5000!')
