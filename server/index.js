@@ -6,6 +6,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var path = require("path");
 
 var app = express();
+app.set('port', (process.env.PORT || 5000));
 
 passport.use('local', new LocalStrategy(
   function(username, password, done) {
@@ -30,7 +31,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressSession({secret: 'anything'}));
 app.use(passport.initialize());
 app.use(passport.session());
-app.use('*', express.static(path.resolve(__dirname, 'public')));
+app.use(express.static(path.resolve(__dirname, 'public')));
 
 app.get('*', function(req, res) {
     // Display the Login page with any flash message, if any
@@ -62,6 +63,6 @@ app.post('/editorlogin',
                                    failureRedirect: '/fail'})
 );*/
 
-app.listen(5000, function () {
-  console.log('Example app listening on port 5000!')
+app.listen(app.get('port'), function () {
+  console.log('Example app listening on port', app.get('port'));
 });
