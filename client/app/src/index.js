@@ -24,7 +24,7 @@ class Main extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <NavBar highlighted={this.state.highlighted}/>
+          <NavBar highlighted={this.state.highlighted} />
         </div>
         <div className="row">
           <Routes onHighlightChanged={this.onHighlightChanged}/>

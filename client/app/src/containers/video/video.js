@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react';
+import PubSub from 'pubsub-js';
+import * as events from '../../events.js';
 import './video.css'
 import PageButton from '../../components/pagebutton/pagebutton.js';
 
@@ -17,7 +19,7 @@ class Video extends Component {
                                 <h2 className="secondary-font-family">Israeli Students Combating Antisemitism</h2>
                             </div>
                             <div style={{'alignSelf':'flex-end'}}>
-                                <PageButton text="Read More" onClick={(e) => window.location = window.location.origin+'#about'}/>
+                                <PageButton text="Read More" onClick={(e) => PubSub.publish(events.NAVBAR_LINK_CLICK, '/#about')}/>
                             </div>
                         </div>
                     </div>

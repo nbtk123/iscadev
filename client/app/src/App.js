@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import PubSub from 'pubsub-js';
+import * as events from './events.js';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,11 +17,33 @@ import VideoGrid from './containers/videogrid/videogrid.js';
 import AfterGraduate from './containers/aftergraduate/aftergraduate.js';
 import PartnersPager from './containers/partnerspager/partnerspager.js';
 
+require('smoothscroll-polyfill').polyfill();
+
 class App extends Component {
 
   constructor(props) {
     super(props);
     this.handleScrollCallback = this.handleScrollCallback.bind(this);
+    this.onNavbarLinkClick = this.onNavbarLinkClick.bind(this);
+  }
+
+  componentWillMount() {
+    this.TOKEN_NAVBAR_LINK_CLICK = PubSub.subscribe(events.NAVBAR_LINK_CLICK, this.onNavbarLinkClick);
+  }
+
+  componentWillUnmount() {
+    PubSub.unsubscribe(this.TOKEN_NAVBAR_LINK_CLICK);
+  }
+
+  onNavbarLinkClick(topic, link) {
+    if (link.startsWith('/#')) {
+      var elemId = link.substring('/#'.length, link.length);
+      console.log('scrolling to ', elemId);
+      var elem = document.getElementById(elemId);
+      window.scroll({top: elem.offsetTop, left: 0, behavior: 'smooth'});
+    } else {
+      window.location = window.location.origin + link;
+    }
   }
 
   isHighlighted(component) {
@@ -30,18 +55,14 @@ class App extends Component {
       
       if (this.isHighlighted(this.about)) {
         somethingighlighted = true;
-        //this.props.route.onHighlightChanged({highlighted:'about'});
+        this.props.route.onHighlightChanged({highlighted:'about'});
       }
-      // if (this.isHighlighted(this.team)) {
-      //   somethingighlighted = true;
-      //   this.props.route.onHighlightChanged({highlighted:'team'});
-      // }
-      // if (this.isHighlighted(this.contactus)) {
-      //   somethingighlighted = true;
-      //   this.props.route.onHighlightChanged({highlighted:'contactus'});
-      // }
+      if (this.isHighlighted(this.theprogram)) {
+        somethingighlighted = true;
+        this.props.route.onHighlightChanged({highlighted:'theprogram'});
+      }
       if (!somethingighlighted) {
-        //this.props.route.onHighlightChanged({highlighted:'none'});
+        this.props.route.onHighlightChanged({highlighted:'none'});
       }
   }
 
@@ -63,7 +84,7 @@ class App extends Component {
         <div className="row" ref={node => this.statistics = node}>
           <Statistics />
         </div>
-        <div className="row" ref={node => this.theprogram = node}>
+        <div className="row" ref={node => this.theprogram = node} id="theprogram">
           <TheProgram />
         </div>
         <div className="row" ref={node => this.partners = node}>

@@ -1,7 +1,19 @@
 import React, { Component, PropTypes } from 'react';
+import PubSub from 'pubsub-js'
+import * as events from '../../events.js';
 import './navbarlink.css';
 
 class NavbarLink extends Component {
+
+    constructor(props) {
+        super(props);
+        this.onClick = this.onClick.bind(this);
+    }
+
+    onClick() {
+        PubSub.publish(events.NAVBAR_LINK_CLICK, this.props.link);
+    }
+
     render() {
 
         const style={
@@ -18,12 +30,12 @@ class NavbarLink extends Component {
         }
 
         return (
-            <a href={this.props.link} className="navbar-link" style={style}>
+            <div onClick={this.onClick} className="navbar-link" style={style}>
                 {
                     this.props.fontawesome ? (<i className={this.props.fontawesome} style={{paddingTop:'0.2em', paddingLeft:'0.5em', paddingRight:'0.5em'}}/>) : ''
                 }
                 {this.props.text}
-            </a>
+            </div>
         );
     }
 }
@@ -32,7 +44,7 @@ NavbarLink.propTypes = {
     text: React.PropTypes.string.isRequired,
     link: React.PropTypes.string.isRequired,
     highlighted: React.PropTypes.bool.isRequired,
-    fontawesome: React.PropTypes.string
+    fontawesome: React.PropTypes.string,
 };
 
 export default NavbarLink;

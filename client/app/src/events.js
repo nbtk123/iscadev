@@ -1,0 +1,1 @@
+export const NAVBAR_LINK_CLICK = 'NAVBAR_LINK_CLICK';
