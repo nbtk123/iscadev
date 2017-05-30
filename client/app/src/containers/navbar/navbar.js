@@ -41,7 +41,7 @@ class NavBar extends Component {
                                 <NavbarLink text="" fontawesome="fa fa-instagram" link="http://www.instagram.com" highlighted={this.props.highlighted === 'instagram'} />
                             </li>
                             <li className="navbar-menu-items-li">
-                                <NavbarLink text="" fontawesome="fa fa-envelope" link="http://www.gmail.com" highlighted={this.props.highlighted === 'email'} />
+                                <NavbarLink text="" fontawesome="fa fa-envelope" link="/contactus" highlighted={this.props.highlighted === 'email'} />
                             </li>
                         </ul>
                     </div>
