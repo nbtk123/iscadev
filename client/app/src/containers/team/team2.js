@@ -1,6 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import TeamMember2 from './teammember2.js'
 
+import PubSub from 'pubsub-js';
+import * as events from '../../events.js';
+
 import './team2.css'
 
 class Team2 extends Component {
@@ -41,6 +44,22 @@ class Team2 extends Component {
                         iscayear: "2017"
                     },
                 ]
+    }
+  }
+
+  componentWillMount() {
+    this.TOKEN_NAVBAR_LINK_CLICK = PubSub.subscribe(events.NAVBAR_LINK_CLICK, this.onNavbarLinkClick);
+  }
+
+  componentWillUnmount() {
+    PubSub.unsubscribe(this.TOKEN_NAVBAR_LINK_CLICK);
+  }
+
+  onNavbarLinkClick(topic, link) {
+    if (link.startsWith('/')) {
+      window.location = window.location.origin + link;
+    } else {
+      window.location = link;
     }
   }
 

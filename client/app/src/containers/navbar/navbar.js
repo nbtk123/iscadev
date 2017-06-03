@@ -23,7 +23,7 @@ class NavBar extends Component {
                                 <NavbarLink text="The Program" link="/#theprogram" highlighted={this.props.highlighted === 'theprogram'} />
                             </li>
                             <li className="navbar-menu-items-li">
-                                <NavbarLink text="Registration" link="/register" highlighted={this.props.highlighted === 'register'} />
+                                <NavbarLink text="Registration" link="/#register" highlighted={this.props.highlighted === 'register'} />
                             </li>
                             <li className="navbar-menu-items-li">
                                 <NavbarLink text="Documents" link="/docs" highlighted={this.props.highlighted === 'docs'} />

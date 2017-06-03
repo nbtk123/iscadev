@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import PubSub from 'pubsub-js';
-import * as events from './events.js';
 
 import logo from './logo.svg';
 import './App.css';
@@ -18,6 +16,8 @@ import AfterGraduate from './containers/aftergraduate/aftergraduate.js';
 import PartnersPager from './containers/partnerspager/partnerspager.js';
 import TypeformRegistration from './containers/typeformregistration/typeformregistration.js'
 
+import PubSub from 'pubsub-js';
+import * as events from './events.js';
 require('smoothscroll-polyfill').polyfill();
 
 class App extends Component {
@@ -39,11 +39,12 @@ class App extends Component {
   onNavbarLinkClick(topic, link) {
     if (link.startsWith('/#')) {
       var elemId = link.substring('/#'.length, link.length);
-      console.log('scrolling to ', elemId);
       var elem = document.getElementById(elemId);
       window.scroll({top: elem.offsetTop, left: 0, behavior: 'smooth'});
-    } else {
+    } else if (link.startsWith('/')) {
       window.location = window.location.origin + link;
+    } else {
+      window.location = link;
     }
   }
 
@@ -61,6 +62,10 @@ class App extends Component {
       if (this.isHighlighted(this.theprogram)) {
         somethingighlighted = true;
         this.props.route.onHighlightChanged({highlighted:'theprogram'});
+      }
+      if (this.isHighlighted(this.register)) {
+        somethingighlighted = true;
+        this.props.route.onHighlightChanged({highlighted:'register'});
       }
       if (!somethingighlighted) {
         this.props.route.onHighlightChanged({highlighted:'none'});
@@ -97,7 +102,7 @@ class App extends Component {
         <div className="row" ref={node => this.aftergraduate = node}>
           <AfterGraduate />
         </div>
-        <div className="row" ref={node => this.typeformregistration = node}>
+        <div className="row" ref={node => this.register = node} id="register">
           <TypeformRegistration />
         </div>
       </div>
