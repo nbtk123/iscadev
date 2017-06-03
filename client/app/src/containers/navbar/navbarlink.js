@@ -10,8 +10,9 @@ class NavbarLink extends Component {
         this.onClick = this.onClick.bind(this);
     }
 
-    onClick() {
+    onClick(event) {
         PubSub.publish(events.NAVBAR_LINK_CLICK, this.props.link);
+        event.preventDefault();
     }
 
     render() {
@@ -30,12 +31,12 @@ class NavbarLink extends Component {
         }
 
         return (
-            <div onClick={this.onClick} className="navbar-link" style={style}>
+            <a href={this.props.link} onClick={this.onClick} className="navbar-link" style={style}>
                 {
                     this.props.fontawesome ? (<i className={this.props.fontawesome} style={{paddingTop:'0.2em', paddingLeft:'0.5em', paddingRight:'0.5em'}}/>) : ''
                 }
                 {this.props.text}
-            </div>
+            </a>
         );
     }
 }
