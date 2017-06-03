@@ -6,34 +6,20 @@ class TeamMember2 extends Component {
 
   constructor(props) {
     super(props);
-
-    this.onMouseOver = this.onMouseOver.bind(this);
-    this.onMouseOut = this.onMouseOut.bind(this);
-  }
-
-  onMouseOver(event) {
-    this.textContainer.style.maxWidth = '5em'
-  }
-
-  onMouseOut(event) {
-    this.textContainer.style.maxWidth = '0';
   }
 
   render() {
 
     return (
-      <div className="teammember2-container" onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut} >
-        <ul className="teammember2-ul">
-          <li className="teammember2-li">
-            <div className="teammember2-circle-border">
-              <img className="teammember2-image" src={this.props.imgsrc} />
+        <div className="col-xs-1">
+            <div className="our-team">
+                <img src={this.props.imgsrc} />
+                <div className="team-content">
+                    <h3 className="title secondary-font-family">{this.props.name}</h3>
+                    <span className="post">{this.props.text}</span>
+                </div>
             </div>
-          </li>
-          <li ref={node => this.textContainer = node} className="teammember2-li teammember2-text-li">
-            Yolo Polo
-          </li>
-        </ul>
-      </div>
+        </div>
     );
   }
 }

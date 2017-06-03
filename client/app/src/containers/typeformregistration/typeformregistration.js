@@ -5,7 +5,7 @@ class TypeformRegistration extends Component {
     return (
       <div className="container-fluid secondary-bg-color">
         <div className="col-xs-6 col-xs-offset-3" style={{'marginTop':'5em', 'marginBottom':'3em'}}>
-          <div className="typeform-widget" style={{'width': '100%', 'height': '40em'}} data-url="https://iscadev.typeform.com/to/lUaGar" >
+          <div className="typeform-widget" style={{'width': '100%', 'height': '40em'}} data-url="https://iscadev.typeform.com/to/UwPKhs" >
           </div>
           <script>
             {

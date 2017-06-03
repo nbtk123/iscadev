@@ -14,32 +14,32 @@ class Team2 extends Component {
     this.state = {
       students: [
                     {
-                        name: "יושימיצו אישימוטו",
-                        text: "סטודנט למנהל עסקים בבית הספר הבינלאומי, שנה ב'",
+                        name: "Williamson",
+                        text: "Live in Lalaland",
                         imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
                         iscayear: "2017"
                     },
                     {
-                        name: "יושימיצו אישימוטו",
-                        text: "סטודנט למנהל עסקים בבית הספר הבינלאומי, שנה ב'",
+                        name: "Williamson",
+                        text: "Live in Lalaland",
                         imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
                         iscayear: "2017"
                     },
                     {
-                        name: "יושימיצו אישימוטו",
-                        text: "סטודנט למנהל עסקים בבית הספר הבינלאומי, שנה ב'",
+                        name: "Williamson",
+                        text: "Live in Lalaland",
                         imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
                         iscayear: "2017"
                     },
                     {
-                        name: "יושימיצו אישימוטו",
-                        text: "סטודנט למנהל עסקים בבית הספר הבינלאומי, שנה ב'",
+                        name: "Williamson",
+                        text: "Live in Lalaland",
                         imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
                         iscayear: "2017"
                     },
                     {
-                        name: "יושימיצו אישימוטו",
-                        text: "סטודנט למנהל עסקים בבית הספר הבינלאומי, שנה ב'",
+                        name: "Williamson",
+                        text: "Live in Lalaland",
                         imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
                         iscayear: "2017"
                     },
@@ -69,17 +69,15 @@ class Team2 extends Component {
         <div className="row secondary-text-color">
           <h1 className="col-xs-12 team2-title">Team</h1>
         </div>
-        <ul className="team2-ul">
+        <div className="row team2-members-container">
           {
             this.state.students.map(function (student, i) {
               return (
-                <li className="team2-li">
-                  <TeamMember2 {...student} key={i}/>
-                </li>
+                <TeamMember2 {...student} key={i}/>
               )
             })
           }
-        </ul>
+        </div>
       </div>
     );
   }
