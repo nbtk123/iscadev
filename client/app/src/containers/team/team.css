@@ -1,10 +1,10 @@
 .team-container {
-    background: #00bfff;
+    background: #0074B2;
 }
 
 .team-tabs .title {
     color: white;
-    background-color: #00bfff;
+    background-color: #0074B2;
     float: right;
     position: relative;
     top: -0.51em;
@@ -20,11 +20,11 @@
     padding: 0;
     padding-top: 1.2em;
     overflow: hidden;
-    background-color:#00bfff; 
+    background-color:#0074B2; 
 }
 
 .team-tabs .ReactTabs__Tab {
-    background-color:#00bfff; 
+    background-color:#0074B2; 
     color: white;
     float: right;
     font-size: 2em;
@@ -48,7 +48,7 @@
 
 .team-tabs .ReactTabs__Tab--selected {
     background-color:white; 
-    color: #00bfff;
+    color: #0074B2;
     float: right;
     border-bottom: 0.25em solid white;
     font-size: 2em;

@@ -17,7 +17,7 @@ class NavbarLink extends Component {
     render() {
 
         const style={
-            'color': this.props.highlighted ? '#00bfff' : '',
+            'color': this.props.highlighted ? '#0074B2' : '',
             'display': 'flex',
             'alignContent': 'center',
             'justifyContent': 'flex-end',

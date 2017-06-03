@@ -2,7 +2,7 @@
     max-height: 20em;
     max-width: 27em;
     border: 0.2em;
-    border-color: #00bfff;
+    border-color: #0074B2;
     border-style: solid;
     border-radius: 1em;
 }
@@ -11,9 +11,9 @@
     float: left;
     width: 10em;
     border: 0.2em;
-    border-right-color: #00bfff;
+    border-right-color: #0074B2;
     border-right-style: solid;
-    border-bottom-color: #00bfff;
+    border-bottom-color: #0074B2;
     border-bottom-style: solid;
     border-radius: 1em;
 }
@@ -37,7 +37,7 @@
 }
 
 .bottom-line {
-    background-color: #00bfff;
+    background-color: #0074B2;
     height: 1em;
     margin-top: 0.5em;
     margin-bottom: 0.8em;

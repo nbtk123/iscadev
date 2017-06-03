@@ -16,6 +16,7 @@ import TheProgram from './containers/theprogram/theprogram.js';
 import VideoGrid from './containers/videogrid/videogrid.js';
 import AfterGraduate from './containers/aftergraduate/aftergraduate.js';
 import PartnersPager from './containers/partnerspager/partnerspager.js';
+import TypeformRegistration from './containers/typeformregistration/typeformregistration.js'
 
 require('smoothscroll-polyfill').polyfill();
 
@@ -95,6 +96,9 @@ class App extends Component {
         </div>
         <div className="row" ref={node => this.aftergraduate = node}>
           <AfterGraduate />
+        </div>
+        <div className="row" ref={node => this.typeformregistration = node}>
+          <TypeformRegistration />
         </div>
       </div>
     );
