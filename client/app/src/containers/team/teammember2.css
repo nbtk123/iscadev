@@ -7,7 +7,7 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
-  transition: all 1s ease-in-out 0s;
+  transition: all 1s;
 }
 
 .our-team:hover {
@@ -23,6 +23,7 @@
     height: auto;
     transform: scale(1);
     border-radius: 50%;
+    transition: all 1s ease 0s;
 }
 .our-team:hover img{
     transform: scale(1.2);
