@@ -21,7 +21,7 @@ class Question extends Component {
         }
 
         return (
-            <div className="col-xs-8 col-xs-offset-2 question-container" onClick={this.handleClick}>
+            <div className="col-md-8 col-md-offset-2 question-container" onClick={this.handleClick}>
                 <h3>{this.props.question}</h3>
                 <div className="question-answer" style={answerStyle}>{this.props.answer}</div>
             </div>

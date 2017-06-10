@@ -79,11 +79,11 @@ class App extends Component {
         <div ref={node => this.video = node} id="video" className="row" style={{'marginTop':'5.5em'}}>
           <Video />
         </div>
-        <div ref={node => this.about = node} id="about" className="row" style={{'display':'flex', 'alignItems':'center'}}>
-          <div className="col-xs-7">
+        <div ref={node => this.about = node} id="about" className="row">
+          <div className="col-md-7">
             <About />
           </div>
-          <div ref={node => this.facebook = node} className="col-xs-5" style={{'display':'flex', 'alignItems':'center'}}>
+          <div ref={node => this.facebook = node} className="col-md-5" style={{'display':'flex', 'alignItems':'center'}}>
             <ISCAFacebook />
           </div>
         </div>

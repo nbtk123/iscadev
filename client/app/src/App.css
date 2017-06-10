@@ -67,6 +67,20 @@ input[type=submit] {
     font-weight: bold;
 }
 
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 0.75em;
+  }
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

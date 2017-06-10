@@ -67,7 +67,7 @@ class Team2 extends Component {
     return (
       <div className="container-fluid team2-container">
         <div className="row secondary-text-color">
-          <h1 className="col-xs-12 team2-title">Team</h1>
+          <h1 className="col-md-12 team2-title">Team</h1>
         </div>
         <div className="row team2-members-container">
           {

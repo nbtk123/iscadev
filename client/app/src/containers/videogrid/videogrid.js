@@ -39,7 +39,7 @@ class VideoGrid extends Component {
           {
             this.state.videos.map(function (video, i) {
               return (
-                <div className="col-xs-4 center-content" key={i}>
+                <div className="col-md-4 video-grid-center-content" key={i}>
                   <VideoGridItem {...video}/>
                 </div>
               )

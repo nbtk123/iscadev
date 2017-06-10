@@ -14,7 +14,7 @@ class Video extends Component {
                 <div className="video-overlay-text">
                     <div className="container">
                         <div className="row" style={{'display':'flex', 'position':'relative', 'marginBottom':'25vw'}}>
-                            <div className="col-xs-12 col-md-6" style={{'textAlign':'left'}}>
+                            <div className="col-md-12" style={{'textAlign':'left'}}>
                                 <div className="row">
                                     <h1 className="bold" style={{'marginBottom':'0'}}>
                                         ISCA <span style={{'fontSize':'0.3em', 'fontWeight':'normal'}}>Academic Program</span>
@@ -23,8 +23,8 @@ class Video extends Component {
                                 <div className="row">
                                     <h2 className="secondary-font-family" style={{'marginTop':'0'}}>Israeli Students Combating Antisemitism</h2>
                                 </div>
-                                <div className="row" style={{'display':'flex','justifyContent':'flex-start'}}>
-                                    <div className="col-xs-4 col-md-5 col-lg-4" style={{'alignSelf':'flex-end', 'padding':'0'}}>
+                                <div className="col-md-2" style={{'display':'flex','justifyContent':'center'}}>
+                                    <div style={{'alignSelf':'flex-end', 'padding':'0'}}>
                                         <PageButton text="Read More" onClick={(e) => PubSub.publish(events.NAVBAR_LINK_CLICK, '/#about')}/>
                                     </div>
                                 </div>

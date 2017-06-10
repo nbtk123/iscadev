@@ -11,7 +11,7 @@ class TeamMember2 extends Component {
   render() {
 
     return (
-        <div className="col-xs-1">
+        <div className="col-md-1">
             <div className="our-team">
                 <img src={this.props.imgsrc} />
                 <div className="team-content">

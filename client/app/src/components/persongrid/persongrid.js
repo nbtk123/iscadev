@@ -10,7 +10,7 @@ class PersonGrid extends Component {
     }
 
     render() {
-        var className = 'col-xs-' + 12/this.props.howMuchInLine;
+        var className = 'col-md-' + 12/this.props.howMuchInLine;
 
         return (
             <div className="container-fluid persons-container right">

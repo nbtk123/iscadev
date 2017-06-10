@@ -6,12 +6,12 @@ import './theprogram.css';
 class TheProgram extends Component {
   render() {
     return (
-      <div className="container-fluid theprogram-container">
+      <div className="container theprogram-container">
         <h2 className="theprogram-title">The Program:</h2>
-        <div className="theprogram-boxes-container">
-          <TheProgramBox />
-          <TheProgramBox />
-          <TheProgramBox />
+        <div className="container-fluid theprogram-boxes-container">
+          <div className="col-md-4 theprogram-boxes-col"><TheProgramBox /></div>
+          <div className="col-md-4 theprogram-boxes-col"><TheProgramBox /></div>
+          <div className="col-md-4 theprogram-boxes-col"><TheProgramBox /></div>
         </div>
       </div>
     );

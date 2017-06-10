@@ -1,12 +1,23 @@
 .statistics-container {
     padding-top: 5em;
     padding-bottom: 5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .statistics-circle-padding {
-    margin-left: 5em;
-    margin-right: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .statistics-container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .statistics-circle-padding {
+        display: flex;
+        justify-content: center;
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
 }

@@ -51,7 +51,7 @@ class Alumnis extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <div className="col-xs-12">
+                <div className="col-md-12">
                     {
                         Object.keys(this.state.alumnis).sort().reverse().map((year, i) => {
                             var marginTop = i != 0 ? '5em' : '0';

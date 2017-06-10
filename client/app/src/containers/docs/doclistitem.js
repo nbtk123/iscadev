@@ -7,7 +7,7 @@ class DocListItem extends Component {
             <div className="container doclistitem-container">
                 <a className="doclistitem-href" href={this.props.link}>
                     <div className="row">
-                        <div className="col-xs-12">
+                        <div className="col-md-12">
                             <img className="doclistitem-image" src={this.props.imgsrc}/>
                             <ul className="doclistitem-ul">
                                 <li className="doclistitem-title"><h2>{this.props.title}</h2></li>
