@@ -76,7 +76,7 @@ class App extends Component {
     return (
       <div ref={node => this.page = node} className="App container-fluid">
         <ScrollEvent handleScrollCallback={this.handleScrollCallback} />
-        <div ref={node => this.video = node} id="video" className="row" style={{'paddingTop':'5.5em'}}>
+        <div ref={node => this.video = node} id="video" className="row" style={{'marginTop':'5.5em'}}>
           <Video />
         </div>
         <div ref={node => this.about = node} id="about" className="row" style={{'display':'flex', 'alignItems':'center'}}>

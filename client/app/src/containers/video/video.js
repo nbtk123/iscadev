@@ -13,13 +13,21 @@ class Video extends Component {
                 </video>
                 <div className="video-overlay-text">
                     <div className="container">
-                        <div className="row" style={{'display':'flex', 'position':'relative', 'paddingBottom':'30em'}}>
-                            <div className="col-xs-8" style={{'textAlign':'left'}}>
-                                <h1 className="bold" style={{'width':'12em'}}>ISCA <span style={{'fontSize':'0.5em', 'fontWeight':'normal'}}>Academic Program</span></h1>
-                                <h2 className="secondary-font-family">Israeli Students Combating Antisemitism</h2>
-                            </div>
-                            <div style={{'alignSelf':'flex-end'}}>
-                                <PageButton text="Read More" onClick={(e) => PubSub.publish(events.NAVBAR_LINK_CLICK, '/#about')}/>
+                        <div className="row" style={{'display':'flex', 'position':'relative', 'marginBottom':'25vw'}}>
+                            <div className="col-xs-12 col-md-6" style={{'textAlign':'left'}}>
+                                <div className="row">
+                                    <h1 className="bold" style={{'marginBottom':'0'}}>
+                                        ISCA <span style={{'fontSize':'0.3em', 'fontWeight':'normal'}}>Academic Program</span>
+                                    </h1>
+                                </div>
+                                <div className="row">
+                                    <h2 className="secondary-font-family" style={{'marginTop':'0'}}>Israeli Students Combating Antisemitism</h2>
+                                </div>
+                                <div className="row" style={{'display':'flex','justifyContent':'flex-start'}}>
+                                    <div className="col-xs-4 col-md-5 col-lg-4" style={{'alignSelf':'flex-end', 'padding':'0'}}>
+                                        <PageButton text="Read More" onClick={(e) => PubSub.publish(events.NAVBAR_LINK_CLICK, '/#about')}/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

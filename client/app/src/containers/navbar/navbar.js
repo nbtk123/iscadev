@@ -2,26 +2,40 @@ import React, { Component, PropTypes } from 'react';
 import './navbar.css';
 import NavbarLink from './navbarlink.js'
 
+import PubSub from 'pubsub-js';
+import * as events from '../../events.js';
+
 class NavBar extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
+            isMenuNavbarOpen: false,
             topNavbarMenuClassName: "navbar-menu-items-ul",
             navbarRowClassName: "navbar-row",
             navbarImageDivClassName: "navbar-image-div",
         }
     }
+
+    componentWillMount() {
+        this.TOKEN_NAVBAR_LINK_CLICK = PubSub.subscribe(events.NAVBAR_LINK_CLICK, this.onNavbarLinkClick);
+    }
+
+    componentWillUnmount() {
+        PubSub.unsubscribe(this.TOKEN_NAVBAR_LINK_CLICK);
+    }
+
+    onNavbarLinkClick = () => {
+        this.openNavMenu()
+    }
+
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
     openNavMenu = () => {
-        // if (this.state.topNavbarMenuClassName === "navbar-menu-items-ul") {
-        //     this.setState({topNavbarMenuClassName: this.state.topNavbarMenuClassName+" responsive"})
-        // } else {
-        //     this.setState({topNavbarMenuClassName: "navbar-menu-items-ul"})
-        // }
         this.setResponsive('topNavbarMenuClassName', "navbar-menu-items-ul");
         this.setResponsive('navbarRowClassName', "navbar-row");
         this.setResponsive('navbarImageDivClassName', "navbar-image-div");
+        
+        this.setState({isMenuNavbarOpen: !this.state.isMenuNavbarOpen});
     }
 
     setResponsive = (stateKey, className) => {
@@ -43,7 +57,7 @@ class NavBar extends Component {
                         <a onClick={this.openNavMenu} href="javascript:void(0);" className="navbar-menu-icon">&#9776;</a>
                         <div className={this.state.navbarImageDivClassName}>
                             <a href="/">
-                                <img src="http://isca-org.com/wp-content/uploads/2014/12/isca-logo.png" height="50em"/>
+                                <img src="http://isca-org.com/wp-content/uploads/2014/12/isca-logo.png" height="50vw"/>
                             </a>
                         </div>
 
