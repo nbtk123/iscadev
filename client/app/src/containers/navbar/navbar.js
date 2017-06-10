@@ -4,18 +4,50 @@ import NavbarLink from './navbarlink.js'
 
 class NavBar extends Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            topNavbarMenuClassName: "navbar-menu-items-ul",
+            navbarRowClassName: "navbar-row",
+            navbarImageDivClassName: "navbar-image-div",
+        }
+    }
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    openNavMenu = () => {
+        // if (this.state.topNavbarMenuClassName === "navbar-menu-items-ul") {
+        //     this.setState({topNavbarMenuClassName: this.state.topNavbarMenuClassName+" responsive"})
+        // } else {
+        //     this.setState({topNavbarMenuClassName: "navbar-menu-items-ul"})
+        // }
+        this.setResponsive('topNavbarMenuClassName', "navbar-menu-items-ul");
+        this.setResponsive('navbarRowClassName', "navbar-row");
+        this.setResponsive('navbarImageDivClassName', "navbar-image-div");
+    }
+
+    setResponsive = (stateKey, className) => {
+        if (this.state[stateKey] === className) {
+            this.setState({[stateKey]: this.state[stateKey]+" responsive"})
+        } else {
+            this.setState({[stateKey]: className})
+        }
+    }
+
     render() {
+        console.log(this.state.topNavbarMenuClassName);
+        console.log(this.state.navbarRowClassName);
+        console.log(this.state.navbarImageDivClassName);
         return (
-            <nav className="navbar navbar-default navbar-fixed-top primary-font-family" style={{display:'flex', 'flexDirection':'column', 'justifyContent':'center'}}>
-                <div className="container">
-                    <div className="row" style={{'display':'flex','justifyContent':'flex-end'}}>
-                        <div className="col-xs-2" style={{'marginRight':'auto', 'marginTop':'1em', 'marginBottom':'1em'}}>
+            <nav className="navbar navbar-default navbar-fixed-top primary-font-family">
+                <div className="container-fluid">
+                    <div className={['row', this.state.navbarRowClassName].join(' ')}>
+                        <a onClick={this.openNavMenu} href="javascript:void(0);" className="navbar-menu-icon">&#9776;</a>
+                        <div className={this.state.navbarImageDivClassName}>
                             <a href="/">
                                 <img src="http://isca-org.com/wp-content/uploads/2014/12/isca-logo.png" height="50em"/>
                             </a>
                         </div>
 
-                        <ul className="navbar-menu-items-ul">
+                        <ul className={this.state.topNavbarMenuClassName}>
                             <li className="navbar-menu-items-li">
                                 <NavbarLink text="About" link="/#about" highlighted={this.props.highlighted === 'about'} />
                             </li>
@@ -25,9 +57,9 @@ class NavBar extends Component {
                             <li className="navbar-menu-items-li">
                                 <NavbarLink text="Registration" link="/#register" highlighted={this.props.highlighted === 'register'} />
                             </li>
-                            <li className="navbar-menu-items-li">
+                            {/*<li className="navbar-menu-items-li">
                                 <NavbarLink text="Documents" link="/docs" highlighted={this.props.highlighted === 'docs'} />
-                            </li>
+                            </li>*/}
                             <li className="navbar-menu-items-li">
                                 <NavbarLink text="Team" link="/team" highlighted={this.props.highlighted === 'team'} />
                             </li>
