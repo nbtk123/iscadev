@@ -83,7 +83,7 @@ class App extends Component {
           <div className="col-md-7">
             <About />
           </div>
-          <div ref={node => this.facebook = node} className="col-md-5" style={{'display':'flex', 'alignItems':'center'}}>
+          <div ref={node => this.facebook = node} className="col-md-5">
             <ISCAFacebook />
           </div>
         </div>

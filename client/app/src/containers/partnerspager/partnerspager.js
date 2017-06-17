@@ -19,6 +19,12 @@ class PartnersPager extends Component {
     this.slider.slickPrev();
   }
 
+  componentDidMount() {
+    window.setInterval(() => {
+      this.pageNext();
+    }, 3000);
+  }
+
   render() {
     var settings = {
       dots: false,
@@ -26,7 +32,7 @@ class PartnersPager extends Component {
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 2,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 3000,
       pauseOnHover: false
     };
