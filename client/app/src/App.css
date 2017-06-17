@@ -71,13 +71,14 @@ input[type=submit] {
   h1 {
     font-size: 3em;
   }
-
   h2 {
     font-size: 1.5em;
   }
-
   h3 {
     font-size: 0.75em;
+  }
+  h4 {
+    font-size: 0.5em;
   }
 }
 

@@ -1,9 +1,24 @@
 .theprogrambox-container {
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
   border-color: #0074B2;
-  height: 35em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 20em;
+}
+
+.theprogrambox-title {
+  text-align: left;
+}
+
+.theprogrambox-li {
+  text-align: left;
+  list-style: none;
+}
+
+.theprogrambox-li:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  float:left;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  color: #0074B2;
+  width: 1.3em; /* same as padding-left set on li */
 }

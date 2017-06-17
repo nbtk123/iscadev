@@ -1,12 +1,13 @@
 .theprogram-container {
   padding-top: 5em;
-  padding-bottom: 5em;
-}
-
-.theprogram-boxes-col {
-  padding: 0;
 }
 
 .theprogram-title {
+  margin-bottom: 2em;
   text-align: left;
+}
+
+.theprogram-boxes-container {
+  display: flex;
+  justify-content: center;
 }
