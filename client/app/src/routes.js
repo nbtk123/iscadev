@@ -9,9 +9,9 @@ import Docs from './containers/docs/docs';
 import ContactUs from './containers/contactus/contactus.js';
 
 class Routes extends Component {
-    
-    render() {
-        return (
+
+    //We defined the router outeide of "render()" because it throws an error when changing the state in index.js
+    router = (
             <Router history={browserHistory }>
                 <Route path="/" onHighlightChanged={this.props.onHighlightChanged} component={App} />
                 <Route path="/team" onHighlightChanged={this.props.onHighlightChanged} component={Team2} />
@@ -20,6 +20,9 @@ class Routes extends Component {
                 <Route path="*" onHighlightChanged={this.props.onHighlightChanged} component={NotFound} />
             </Router>
         );
+
+    render() {
+        return this.router
     }
 }
 

@@ -47,9 +47,6 @@ class NavBar extends Component {
     }
 
     render() {
-        console.log(this.state.topNavbarMenuClassName);
-        console.log(this.state.navbarRowClassName);
-        console.log(this.state.navbarImageDivClassName);
         return (
             <nav className="navbar navbar-default navbar-fixed-top primary-font-family">
                 <div className="container-fluid">

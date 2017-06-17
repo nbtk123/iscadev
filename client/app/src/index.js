@@ -17,7 +17,9 @@ class Main extends Component {
   }
 
   onHighlightChanged(obj) {
-    this.setState(obj);
+    if (this.state.highlighted != obj.highlighted) {
+      this.setState({highlighted: obj.highlighted});
+    }
   }
 
   render() {

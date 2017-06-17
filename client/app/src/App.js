@@ -53,23 +53,19 @@ class App extends Component {
   }
 
   handleScrollCallback() {
-      var somethingighlighted = false;
+      var highlighted = 'none'
       
       if (this.isHighlighted(this.about)) {
-        somethingighlighted = true;
-        this.props.route.onHighlightChanged({highlighted:'about'});
+        highlighted = 'about';
       }
       if (this.isHighlighted(this.theprogram)) {
-        somethingighlighted = true;
-        this.props.route.onHighlightChanged({highlighted:'theprogram'});
+        highlighted = 'theprogram';
       }
       if (this.isHighlighted(this.register)) {
-        somethingighlighted = true;
-        this.props.route.onHighlightChanged({highlighted:'register'});
+        highlighted = 'register';
       }
-      if (!somethingighlighted) {
-        this.props.route.onHighlightChanged({highlighted:'none'});
-      }
+
+      this.props.route.onHighlightChanged({highlighted:highlighted});
   }
 
   render() {
