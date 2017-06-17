@@ -7,7 +7,11 @@
   text-align: left;
 }
 
-.theprogram-boxes-container {
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 800px) {
+  .theprogram-boxes-col {
+    margin-bottom: 4em;
+  }
+  .theprogram-title {
+    margin-bottom: 1em;
+  }
 }

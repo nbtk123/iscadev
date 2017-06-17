@@ -7,3 +7,9 @@
 .about h3{
     font-size: 2.25em;
 }
+
+@media screen and (max-width: 800px) {
+  .about h3 {
+    font-size: 1.5em;
+  }
+}

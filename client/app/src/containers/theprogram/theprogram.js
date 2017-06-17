@@ -28,8 +28,8 @@ class TheProgram extends Component {
       <div className="container theprogram-container">
         <h2 className="theprogram-title primary-text-color">The Program:</h2>
         <div className="container-fluid theprogram-boxes-container">
-          <div className="col-md-12 theprogram-boxes-col"><TheProgramBox {... this.boxes[0]} /></div>
-          <div className="col-md-12 theprogram-boxes-col"><TheProgramBox {... this.boxes[1]} /></div>
+          <div className="col-md-6 theprogram-boxes-col"><TheProgramBox {... this.boxes[0]} /></div>
+          <div className="col-md-6 theprogram-boxes-col"><TheProgramBox {... this.boxes[1]} /></div>
         </div>
       </div>
     );

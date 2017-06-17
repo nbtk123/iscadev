@@ -11,3 +11,18 @@
 .video-container {
   position: relative;
 }
+
+@media screen and (max-width: 800px) {
+  .video-container h1 {
+    font-size: 3em;
+  }
+  .video-container h2 {
+    font-size: 1.5em;
+  }
+  .video-container h3 {
+    font-size: 0.75em;
+  }
+  .video-container h4 {
+    font-size: 0.5em;
+  }
+}
