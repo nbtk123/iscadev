@@ -34,7 +34,7 @@ class PartnersPager extends Component {
       slidesToScroll: 2,
       autoplay: false,
       autoplaySpeed: 3000,
-      pauseOnHover: false
+      pauseOnHover: false,
     };
 
     return (
