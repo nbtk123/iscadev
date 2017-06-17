@@ -1,11 +1,15 @@
 .textincircle-circle {
   border-radius: 10em/10em;
   border: solid 1px white;
-  width: 10em;
-  height: 10em;
+  width: 12em;
+  height: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .textincircle-bottomtextcontainer {
     padding-left: 1em;
     padding-right: 1em;
+    margin-top: 0;
 }
