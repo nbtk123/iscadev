@@ -75,13 +75,13 @@ class NavBar extends Component {
                                 <NavbarLink text="Team" link="/team" highlighted={this.props.highlighted === 'team'} />
                             </li>
                             <li className="navbar-menu-items-li">
-                                <NavbarLink text="" fontawesome="fa fa-facebook" link="http://www.facebook.com" highlighted={this.props.highlighted === 'facebook'} />
+                                <NavbarLink text="" fontawesome="fa fa-facebook" link="https://www.facebook.com/ISCAorg/" highlighted={this.props.highlighted === 'facebook'} />
                             </li>
                             <li className="navbar-menu-items-li">
-                                <NavbarLink text="" fontawesome="fa fa-twitter" link="http://www.twitter.com" highlighted={this.props.highlighted === 'twitter'} />
+                                <NavbarLink text="" fontawesome="fa fa-twitter" link="https://twitter.com/ISCAorg?lang=eng" highlighted={this.props.highlighted === 'twitter'} />
                             </li>
                             <li className="navbar-menu-items-li">
-                                <NavbarLink text="" fontawesome="fa fa-instagram" link="http://www.instagram.com" highlighted={this.props.highlighted === 'instagram'} />
+                                <NavbarLink text="" fontawesome="fa fa-instagram" link="https://www.instagram.com/isca_org/" highlighted={this.props.highlighted === 'instagram'} />
                             </li>
                             <li className="navbar-menu-items-li">
                                 <NavbarLink text="" fontawesome="fa fa-envelope" link="/contactus" highlighted={this.props.highlighted === 'email'} />
