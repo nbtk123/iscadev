@@ -1,15 +1,16 @@
 .partners-pager-image {
-  width: 15vw;
-  max-height: 15em;
+  max-width: 15vw;
+  min-width: 10vw;
   margin: auto;
+  align-self: center;
 }
 
 .partners-pager {
   min-height: 0;
   min-width: 0;
   max-width: 70em;
-  max-height: 15em;
-  margin-top: 5em;
+  max-height: 20em;
+  margin-bottom: 5em;
 }
 
 .partners-pager-container {
