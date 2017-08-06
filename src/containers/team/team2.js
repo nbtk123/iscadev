@@ -3,6 +3,7 @@ import TeamMember2 from './teammember2.js'
 
 import PubSub from 'pubsub-js';
 import * as events from '../../events.js';
+import {studentlist} from './studentlist.js'
 
 import './team2.css'
 
@@ -12,39 +13,10 @@ class Team2 extends Component {
     super(props);
 
     this.state = {
-      students: [
-                    {
-                        name: "Williamson",
-                        text: "Live in Lalaland",
-                        imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
-                        iscayear: "2017"
-                    },
-                    {
-                        name: "Williamson",
-                        text: "Live in Lalaland",
-                        imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
-                        iscayear: "2017"
-                    },
-                    {
-                        name: "Williamson",
-                        text: "Live in Lalaland",
-                        imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
-                        iscayear: "2017"
-                    },
-                    {
-                        name: "Williamson",
-                        text: "Live in Lalaland",
-                        imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
-                        iscayear: "2017"
-                    },
-                    {
-                        name: "Williamson",
-                        text: "Live in Lalaland",
-                        imgsrc: "http://mhalabs.org/wp-content/uploads/upme/1451456913_brodie.jpg",
-                        iscayear: "2017"
-                    },
-                ]
+      students: studentlist
     }
+
+    this.studentsRows = [];
   }
 
   componentWillMount() {
@@ -63,21 +35,47 @@ class Team2 extends Component {
     }
   }
 
+  prepareStudentsRows() {
+    this.studentsRows = [];
+    var b = 0;
+    var e = 8;
+
+    // Extract all lines in size of 8
+    while (e < this.state.students.length) {
+      this.studentsRows.push(this.state.students.slice(b, e));
+      b = e;
+      e += 8;
+    }
+
+    // Extract the last line, which is of size < 8
+    if (b < this.state.students.length) {
+      e = this.state.students.length;
+      this.studentsRows.push(this.state.students.slice(b, e));
+    }
+  }
+
   render() {
+    this.prepareStudentsRows();
     return (
       <div className="container-fluid team2-container">
         <div className="row secondary-text-color">
           <h1 className="col-md-12 team2-title">Team</h1>
         </div>
-        <div className="row team2-members-container">
-          {
-            this.state.students.map(function (student, i) {
-              return (
-                <TeamMember2 {...student} key={i}/>
-              )
-            })
-          }
-        </div>
+        {
+          this.studentsRows.map((row, r) => {
+            return (
+              <div className="row team2-members-container" key={r}>
+                {
+              row.map(function (student, i) {
+                return (
+                  <TeamMember2 {...student} key={i}/>
+                )
+              })
+            }
+              </div>
+            )
+          })
+        }
       </div>
     );
   }
