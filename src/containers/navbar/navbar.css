@@ -30,6 +30,7 @@
 }
 
 .navbar-image-div {
+    display: inline-flex;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-right: auto;
@@ -38,20 +39,19 @@
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
   .navbar-menu-items-ul {display: none;}
-  a.navbar-menu-icon {
-    position: absolute;
+  a.navbar-menu-icon {  
     display: block;
     left: 0;
     top: 0;
-    margin-left: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     margin-top: 0.25em;
     font-size: 3em;
     text-decoration: none;
     color: black;
   }
   .navbar-image-div {
-      margin-left: auto;
-      margin-right: auto;
+      display: inline-block;
   }
 }
 
@@ -66,8 +66,7 @@
       display: block;
   }
   .navbar-image-div.responsive {
-      display: flex;
-      justify-content: center;
+      
   }
   .navbar-menu-items-ul.responsive li {
     float: none;

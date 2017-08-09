@@ -51,13 +51,17 @@ class NavBar extends Component {
             <nav className="navbar navbar-default navbar-fixed-top primary-font-family">
                 <div className="container-fluid">
                     <div className={['row', this.state.navbarRowClassName].join(' ')}>
-                        <a onClick={this.openNavMenu} href="javascript:void(0);" className="navbar-menu-icon">&#9776;</a>
+                        <div><a onClick={this.openNavMenu} href="javascript:void(0);" className="navbar-menu-icon">&#9776;</a></div>
+                        <div style={{display:'inline-block'}}>
+                            <a href="http://www.idc.ac.il">
+                                <img src="https://www.marshall.usc.edu/sites/default/files/inline-images/Interdisciplinary-Center-Herzliya-Logo.jpg" height="81em"/>
+                            </a>
+                        </div>
                         <div className={this.state.navbarImageDivClassName}>
                             <a href="/">
                                 <img src="http://isca-org.com/wp-content/uploads/2014/12/isca-logo.png" height="50vw"/>
                             </a>
                         </div>
-
                         <ul className={this.state.topNavbarMenuClassName}>
                             <li className="navbar-menu-items-li">
                                 <NavbarLink text="About" link="/#about" highlighted={this.props.highlighted === 'about'} />
