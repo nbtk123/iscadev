@@ -8,6 +8,7 @@
 
 .team2-container {
   margin-top: 7.25em;
+  margin-bottom: 10em;
 }
 
 .team2-title {
@@ -24,4 +25,5 @@
   display: flex;
   justify-content: center;
   margin-top: 2em;
+  max-height: 7em;
 }
