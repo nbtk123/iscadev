@@ -38,20 +38,23 @@ class PartnersPager extends Component {
     };
 
     return (
-      <div className="partners-pager-container">
-        <Slider ref={node => this.slider = node} {...settings} className="partners-pager">
-          {
-            // There are 21 images in 'public/partners' folder
-            Array.apply(null, Array(21)).map(function (_, i) {
-              return (
-                // No choice to have the style here, because 'Slider' overrides if in css file.
-                <div style={{display:'flex', alignItems:'center', justifyContent:'center', height:'25em'}}>
-                  <img className="partners-pager-image" src={require('../../../public/partners/'+(i+1)+'.png')}/>
-                </div>
-                )
-            })
-          }
-        </Slider>
+      <div className="container-flow">
+        <h3 className="primary-text-color" style={{position:'relative', top:'3em'}}>Partners</h3>
+        <div className="partners-pager-container">
+          <Slider ref={node => this.slider = node} {...settings} className="partners-pager">
+            {
+              // There are 22 images in 'public/partners' folder
+              Array.apply(null, Array(22)).map(function (_, i) {
+                return (
+                  // No choice to have the style here, because 'Slider' overrides if in css file.
+                  <div style={{display:'flex', alignItems:'center', justifyContent:'center', height:'25em'}}>
+                    <img className="partners-pager-image" src={require('../../../public/partners/'+(i+1)+'.png')}/>
+                  </div>
+                  )
+              })
+            }
+          </Slider>
+        </div>
       </div>
     );
   }

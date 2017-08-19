@@ -6,7 +6,7 @@ class TextInCircle extends Component {
     render() {
         return (
             <div className="textincircle-circle">
-                <h2>{this.props.topText}</h2>
+                <h2>{this.props.topText}<span style={{verticalAlign:'text-top'}}>+</span></h2>
                 <h4 className="textincircle-bottomtextcontainer">{this.props.bottomText}</h4>
             </div>
         );
