@@ -8,11 +8,9 @@ class VideoGridItem extends Component {
       <div className="video-grid-item-container">
         <div className="video-grid-item-images-container">
           <div className="video-grid-item-img-container">
-            <img src={this.props.imgsrc}/>
-          </div>
-          <div className="video-grid-item-play-icon-container">
-            <img  className="video-grid-item-play-icon-img"
-                  src="https://img.clipartfest.com/28ba86a53fd808aa397b21f1d2e2acb1_play-icon-transparent-play-icon-clipart-transparent-background_300-169.png"/>
+            <iframe width="327" height="181"
+              src={this.props.videoUrl}>
+            </iframe>
           </div>
         </div>
         <div className="video-grid-item-text-container">

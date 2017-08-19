@@ -12,19 +12,19 @@ class VideoGrid extends Component {
       videos : [
             {
               imgsrc : "http://bootcamp.israeltechchallenge.com/images/pic1.jpg",
-              videoUrl : "",
+              videoUrl : "https://www.youtube.com/embed/XGSy3_Czz8k",
               name : "John",
               about : "Neruoscience & Techonology, Brandeis Univeristy, United States"
             },
             {
               imgsrc : "http://bootcamp.israeltechchallenge.com/images/pic1.jpg",
-              videoUrl : "",
+              videoUrl : "https://www.youtube.com/embed/XGSy3_Czz8k",
               name : "John",
               about : "Neruoscience & Techonology, Brandeis Univeristy, United States"
             },
             {
               imgsrc : "http://bootcamp.israeltechchallenge.com/images/pic1.jpg",
-              videoUrl : "",
+              videoUrl : "https://www.youtube.com/embed/XGSy3_Czz8k",
               name : "John",
               about : "Neruoscience & Techonology, Brandeis Univeristy, United States"
             }

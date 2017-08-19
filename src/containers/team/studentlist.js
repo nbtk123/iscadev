@@ -9,7 +9,7 @@ var images = ['adi_chiki.jpg', 'arielle_ankri.jpg', 'aviad_hahami.jpg', 'ben_ros
 
 export var studentlist = images.map(image => {
   return {
-    name: image.replace('_',' ').replace('.jpg','').replace(/\b\w/g, l => l.toUpperCase()),
+    name: image.replace(/_/g,' ').replace('.jpg','').replace(/\b\w/g, l => l.toUpperCase()),
     imgsrc: require("../../../public/students/"+image)
   }
 })

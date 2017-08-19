@@ -40,7 +40,7 @@ class App extends Component {
     if (link.startsWith('/#')) {
       var elemId = link.substring('/#'.length, link.length);
       var elem = document.getElementById(elemId);
-      window.scroll({top: elem.offsetTop, left: 0, behavior: 'smooth'});
+      window.scroll({top: elem.offsetTop-80, left: 0, behavior: 'smooth'});
     } else if (link.startsWith('/')) {
       window.location = window.location.origin + link;
     } else {
