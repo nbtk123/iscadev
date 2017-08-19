@@ -58,8 +58,8 @@ class NavBar extends Component {
                             </a>
                         </div>
                         <div className={this.state.navbarImageDivClassName}>
-                            <a href="/">
-                                <img src="http://isca-org.com/wp-content/uploads/2014/12/isca-logo.png" height="50vw"/>
+                            <a href="/" className="navbar-logo-href">
+                                <img src={require('../../../public/logo.png')} height="70vw"/>
                             </a>
                         </div>
                         <ul className={this.state.topNavbarMenuClassName}>

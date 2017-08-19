@@ -31,9 +31,12 @@
 
 .navbar-image-div {
     display: inline-flex;
-    margin-top: 1em;
-    margin-bottom: 1em;
     margin-right: auto;
+}
+
+.navbar-logo-href {
+    display: flex;
+    align-items: center
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

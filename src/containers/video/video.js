@@ -16,18 +16,22 @@ class Video extends Component {
                         <div className="row" style={{'display':'flex', 'position':'relative', 'marginBottom':'25vw'}}>
                             <div className="col-md-12" style={{'textAlign':'left'}}>
                                 <div className="row">
-                                    <h1 className="bold" style={{'marginBottom':'0'}}>
-                                        ISCA <span style={{'fontSize':'0.3em', 'fontWeight':'normal'}}>Academic Program</span>
-                                    </h1>
-                                </div>
-                                <div className="row">
-                                    <h2 className="secondary-font-family" style={{'marginTop':'0'}}>Israeli Students Combating Antisemitism</h2>
-                                </div>
-                                <div className="col-md-2" style={{'display':'flex','justifyContent':'center'}}>
-                                    <div style={{'alignSelf':'flex-end', 'padding':'0'}}>
+                                    <div className="col-lg-8 col-md-4 col-xs-12">
+                                        <h1 className="bold" style={{'marginBottom':'0'}}>
+                                            ISCA <span style={{fontSize:'0.5em'}}>Academic Program</span>
+                                        </h1>
+                                        <h2 className="secondary-font-family" style={{'marginTop':'0'}}>התוכנית האקדמית למאבק באנטישמיות</h2>
+                                        <h2 className="secondary-font-family" style={{'marginTop':'0'}}>Your path to shaping online discourse starts here</h2>
+                                    </div>
+                                    <div className="col-lg-4 col-md-4 col-xs-4 video-read-more">
                                         <PageButton text="Read More" onClick={(e) => PubSub.publish(events.NAVBAR_LINK_CLICK, '/#about')}/>
                                     </div>
                                 </div>
+                                {/* <div className="col-md-2" style={{'display':'flex','justifyContent':'center'}}>
+                                    <div style={{'alignSelf':'flex-end', 'padding':'0'}}>
+                                        <PageButton text="Read More" onClick={(e) => PubSub.publish(events.NAVBAR_LINK_CLICK, '/#about')}/>
+                                    </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

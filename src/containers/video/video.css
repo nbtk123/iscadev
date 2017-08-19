@@ -12,6 +12,10 @@
   position: relative;
 }
 
+.video-read-more {
+  margin-top: 13%;
+}
+
 @media screen and (max-width: 800px) {
   .video-container h1 {
     font-size: 3em;
@@ -24,5 +28,11 @@
   }
   .video-container h4 {
     font-size: 0.5em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .video-read-more {
+    margin-top: 5%;
   }
 }
