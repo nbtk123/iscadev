@@ -7,7 +7,7 @@ class ISCAFacebook extends Component {
     componentWillMount() {
         this.setState({
             width: window.innerWidth<=800 ? '400' : '500',
-            height: window.innerWidth<=800 ? '460' : '540',
+            height: window.innerWidth<=800 ? '460' : '650',
         });
     }
 
