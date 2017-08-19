@@ -31,6 +31,9 @@ class ContactUs extends Component {
                     <div className="row secondary-text-color">
                         <h1 className="col-md-12 title">Contact Us</h1>
                     </div>
+                    <div className="row" style={{display:'flex', justifyContent:'center', marginBottom:'5em'}}>
+                        <img src={require("../../../public/idc_map.png")}/>
+                    </div>
                     <h2 className="primary-text-color" style={{'textAlign':'center'}}>FAQ</h2>
                     <QuestionList />
                     <hr className="faq-seperator"/>
