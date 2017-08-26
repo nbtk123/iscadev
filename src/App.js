@@ -14,7 +14,8 @@ import TheProgram from './containers/theprogram/theprogram.js';
 import VideoGrid from './containers/videogrid/videogrid.js';
 import AfterGraduate from './containers/aftergraduate/aftergraduate.js';
 import PartnersPager from './containers/partnerspager/partnerspager.js';
-import TypeformRegistration from './containers/typeformregistration/typeformregistration.js'
+import TypeformRegistration from './containers/typeformregistration/typeformregistration.js';
+import Footer from './containers/footer/footer.js';
 
 import PubSub from 'pubsub-js';
 import * as events from './events.js';
@@ -100,6 +101,9 @@ class App extends Component {
         </div>
         <div className="row" ref={node => this.register = node} id="register">
           <TypeformRegistration />
+        </div>
+        <div className="row" ref={node => this.footer = node}>
+          <Footer />
         </div>
       </div>
     );

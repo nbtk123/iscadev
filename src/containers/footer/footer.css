@@ -1,0 +1,16 @@
+.footer-container {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-ul li {
+  display: inline;
+  margin: 8px;
+  font-size: 2em;
+}
