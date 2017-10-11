@@ -30,7 +30,10 @@ class TheProgram extends Component {
     {
       title: "Candidates",
       items: [
-        "Something",
+        "Competent English speaker",
+        "Currently studying at IDC Herzliya [Why we ask for this].",
+        "Ability to work both from home and in a team.",
+        "Committed to excellence and results driven "
       ]
     },
   ]

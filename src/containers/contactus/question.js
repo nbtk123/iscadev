@@ -23,7 +23,7 @@ class Question extends Component {
         return (
             <div className="col-md-8 col-md-offset-2 question-container" onClick={this.handleClick}>
                 <h3>{this.props.question}</h3>
-                <div className="question-answer" style={answerStyle}>{this.props.answer}</div>
+                <div className="question-answer" style={answerStyle} dangerouslySetInnerHTML={{__html: this.props.answer}}></div>
             </div>
         );
     }
