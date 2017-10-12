@@ -62,7 +62,7 @@ class Team2 extends Component {
           <h1 className="col-md-12 team2-title">Team</h1>
         </div>
         {
-          <div className="container-fluid team2-members-container">
+          <div className="container team2-members-container">
             <div className="row">
             {
               this.state.students.map((student, i) => {
