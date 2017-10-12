@@ -55,26 +55,37 @@ class Team2 extends Component {
   }
 
   render() {
-    this.prepareStudentsRows();
+    // this.prepareStudentsRows();
     return (
       <div className="container-fluid team2-container">
         <div className="row secondary-text-color">
           <h1 className="col-md-12 team2-title">Team</h1>
         </div>
         {
-          this.studentsRows.map((row, r) => {
-            return (
-              <div className="row team2-members-container" key={r}>
-                {
-              row.map(function (student, i) {
+          <div className="container-fluid team2-members-container">
+            <div className="row">
+            {
+              this.state.students.map((student, i) => {
                 return (
-                  <TeamMember2 {...student} key={i}/>
+                    <TeamMember2 {...student} key={i}/>
                 )
               })
             }
-              </div>
-            )
-          })
+            </div>
+          </div>
+          // this.studentsRows.map((row, r) => {
+          //   return (
+          //     <div className="row team2-members-container" key={r}>
+          //       {
+          //     row.map(function (student, i) {
+          //       return (
+          //         <TeamMember2 {...student} key={i}/>
+          //       )
+          //     })
+          //   }
+          //     </div>
+          //   )
+          // })
         }
       </div>
     );
