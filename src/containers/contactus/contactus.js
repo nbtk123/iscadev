@@ -27,12 +27,9 @@ class ContactUs extends Component {
 
     render() {
         return (
-                <div className="container-fluid contactus" style={{'marginTop':'7.25em', 'marginBottom':'8em'}}>
+                <div className="container-fluid contactus" style={{'marginTop':'7.25em'}}>
                     <div className="row secondary-text-color">
                         <h1 className="col-md-12 title">Contact Us</h1>
-                    </div>
-                    <div className="row" style={{display:'flex', justifyContent:'center', marginBottom:'5em'}}>
-                        <img src={require("../../../public/idc_map.png")}/>
                     </div>
                     <h2 className="primary-text-color" style={{'textAlign':'center'}}>FAQ</h2>
                     <QuestionList />
@@ -46,8 +43,14 @@ class ContactUs extends Component {
                         (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
                         }
                     </script>
-                    <div style={{fontFamily: 'Sans-Serif', fontSize: '12px', color: '#999', opacity: '0.5', paddingTop: '5px'}} > powered by <a href="https://www.typeform.com/examples/forms/contact-form-template/?utm_campaign=mDfesN&amp;utm_source=typeform.com-8482275-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-contactform&amp;utm_term=EN" style={{color: '#999'}} target="_blank">Typeform</a> </div>
-                        
+                    
+                    <div className="row contactus-location-text primary-font-family">
+                    Interdisciplinary Center (IDC) Herzliya | Community Programs | Israeli Students Combating Antisemetism  
+Public Benefit Company<br/>P.O.Box 167, Herzliya 4610101, Israel | www.isca.idc.ac.il | isca@idc.ac.il
+                    </div>
+                    <div className="row contactus-location-map">
+                        <img src={require("../../../public/idc_map.png")}/>
+                    </div>
                 </div>
         );
     }

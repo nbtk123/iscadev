@@ -14,3 +14,32 @@
     border-width: 1px;
     border-color: #0074B2;
 }
+
+.contactus-location-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom:5em;
+    background-color: #0074B2;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.contactus-location-text {
+    padding-top: 5em;
+    padding-bottom: 2em;
+    color: #b1d5f8;
+    font-size: 18px;
+}
+
+.contactus-location-map {
+    padding-bottom: 5em;
+}
+
+.contactus-location-text, .contactus-location-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: #0074B2;
+}

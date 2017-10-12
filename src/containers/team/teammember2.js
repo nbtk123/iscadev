@@ -16,8 +16,8 @@ class TeamMember2 extends Component {
                 <img src={this.props.imgsrc} />
                 <div className="team-content">
                     <h3 className="title secondary-font-family">{this.props.name}</h3>
+                    <span className="post">{this.props.subtitle}</span>
                     <span className="post">{this.props.year}</span>
-                    <span className="post">{this.props.text}</span>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@ class TeamMember2 extends Component {
 
 TeamMember2.propTypes = {
   name: React.PropTypes.string.isRequired,
-  text: React.PropTypes.string,
+  subtitle: React.PropTypes.string,
   imgsrc: React.PropTypes.string.isRequired,
   iscayear: React.PropTypes.string
 };

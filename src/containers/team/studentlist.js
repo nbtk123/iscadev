@@ -19,8 +19,38 @@ var images = ['adi_chiki.jpg', 'arielle_ankri.jpg', 'aviad_hahami.jpg', 'ben_ros
 export var studentlist = [
   {
     'name': 'Roy Meirom',
-    'subtitle': '',
+    'subtitle': 'Founder & Chairman',
     'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/p240x240/15327395_10157786220500150_2326042848380465891_n.jpg?oh=2c28e610591ef335c0aff2b0fa6df95c&oe=5A874ADD',
+    'year': "2015"
+},
+{
+    'name': 'Ram Penkar',
+    'subtitle': 'Program Coordinator',
+    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/p240x240/15241371_10209096329258250_8328128397462744257_n.jpg?oh=af5dbea12d96857072b1bbed46e9b356&oe=5A70C752',
+    'year': "2015"
+},
+{
+    'name': 'Adi Goldshtein Harel',
+    'subtitle': 'Program Coordinator',
+    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/13537598_10154114328049017_8902878979492219202_n.jpg?oh=74137024a3a28c69aa6c76a552590a2e&oe=5A6E35A9',
+    'year': "2016"
+},
+{
+    'name': 'Chirelle Chekroune',
+    'subtitle': 'Program Coordinator',
+    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/11259437_1031543186875552_1879945431956141721_n.jpg?oh=d8943951c19b9f364a8c70da3058b92b&oe=5A7C545B',
+    'year': "2017"
+},
+{
+    'name': 'Nir Barzilay',
+    'subtitle': 'Tech Lead',
+    'imgsrc': 'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/14708230_10209416908912484_2331691289157899122_n.jpg?oh=c880bd8635a961645cbf2529e5c3fe93&oe=5A8622BC',
+    'year': '2017'
+},
+{
+    'name': 'Gabriela Rolnik',
+    'subtitle': '',
+    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.  t/v/t1.0-1/p240x240/11425242_457498594410924_7147612685855763735_n.jpg?oh=2687b6e28d0fb354a1343368065ffb55&oe=5A7D7232',
     'year': "2015"
 },
 {
@@ -28,24 +58,6 @@ export var studentlist = [
     'subtitle': '',
     'imgsrc': 'NO IMAGE',
     'year': "2015"
-},
-{
-    'name': 'Gabriela Rolnik',
-    'subtitle': '',
-    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/p240x240/11425242_457498594410924_7147612685855763735_n.jpg?oh=2687b6e28d0fb354a1343368065ffb55&oe=5A7D7232',
-    'year': "2015"
-},
-{
-    'name': 'Chirelle Chekroune',
-    'subtitle': '',
-    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/11259437_1031543186875552_1879945431956141721_n.jpg?oh=d8943951c19b9f364a8c70da3058b92b&oe=5A7C545B',
-    'year': "2015"
-},
-{
-    'name': 'Nir Barzilay',
-    'subtitle': '',
-    'imgsrc': 'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/14708230_10209416908912484_2331691289157899122_n.jpg?oh=c880bd8635a961645cbf2529e5c3fe93&oe=5A8622BC',
-    'year': '2017'
 },
 {
     'name': 'Miki Mazur',
@@ -63,12 +75,6 @@ export var studentlist = [
     'name': 'Klil Kimhi',
     'subtitle': '',
     'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/p240x240/20294169_10211936872911490_8956318454120040798_n.jpg?oh=04297fdf749bee2b049f1ce6ae6b946f&oe=5A73C9C4',
-    'year': "2015"
-},
-{
-    'name': 'Ram Penkar',
-    'subtitle': '',
-    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/p240x240/15241371_10209096329258250_8328128397462744257_n.jpg?oh=af5dbea12d96857072b1bbed46e9b356&oe=5A70C752',
     'year': "2015"
 },
 {
@@ -93,12 +99,6 @@ export var studentlist = [
     'name': 'Or Briga',
     'subtitle': '',
     'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/c60.0.240.240/p240x240/13435382_10154296004929275_2419206132440237447_n.jpg?oh=174a4d02dbfa43ed5247f52c804271e4&oe=5A827D76',
-    'year': "2015"
-},
-{
-    'name': 'Adi Goldshtein Harel',
-    'subtitle': '',
-    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/13537598_10154114328049017_8902878979492219202_n.jpg?oh=74137024a3a28c69aa6c76a552590a2e&oe=5A6E35A9',
     'year': "2015"
 },
 {
@@ -192,12 +192,6 @@ export var studentlist = [
     'year': '2016'
 },
 {
-    'name': 'Omer Karjevsky',
-    'subtitle': '',
-    'imgsrc': 'https://scontent.fhfa2-1.fna.fbcdn.net/v/t1.0-1/p240x240/1977247_10152300845811585_1006496417_n.jpg?oh=c1e30c5dfdec315b4ef32c4449bdc010&oe=5A70E72C',
-    'year': '2016'
-},
-{
     'name': 'Nitzan Bigman',
     'subtitle': '',
     'imgsrc': 'https://scontent.fhfa2-1.fna.fbcdn.net/v/t1.0-1/c1.0.240.240/p240x240/22221855_10159389075250333_6023669215232550300_n.jpg?oh=80045c35bb689b78a21b7d39b570fb86&oe=5A3A22CF',
@@ -271,7 +265,7 @@ export var studentlist = [
 },
 {
     'name': 'Bar Cohen',
-    'subtitle': '',
+    'subtitle': 'Program Coordinator',
     'imgsrc': 'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/21764761_1678307175522397_8771246474723102330_n.jpg?oh=f05163d8404077e8c806aa75c76e0710&oe=5A82569F',
     'year': '2017'
 },

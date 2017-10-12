@@ -11,10 +11,10 @@ class VideoGrid extends Component {
     this.state = {
       videos : [
             {
-              imgsrc : "http://bootcamp.israeltechchallenge.com/images/pic1.jpg",
+              imgsrc : require('../../../public/testimonies/gabi.jpg'),
               videoUrl : "https://www.youtube.com/embed/XGSy3_Czz8k",
-              name : "John",
-              about : "Neruoscience & Techonology, Brandeis Univeristy, United States"
+              name : "Gabbi",
+              about : "During the two years that I volunteered at ISCA, I was able to influence people's knowledge about Jewish culture, history and heritage. If you know foreign languages and want to make a real change in foreign societies, ISCA offers multiple opportunities to do so. "
             },
             {
               imgsrc : "http://bootcamp.israeltechchallenge.com/images/pic1.jpg",
