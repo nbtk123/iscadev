@@ -14,6 +14,7 @@
 .teammember-container {
     height: 7vmax;
     width: 7vmax;
+    margin: 1vw;
 }
 
 .our-team:hover {
@@ -40,18 +41,18 @@
     
 }
 .our-team .team-content{
-    width: 100%;
+    width: 120%;
     height: 100%;
     background: #0074B2;
     border-radius: 50% / 35%;
     margin-top: 60%;
-    padding-top: 1vmax;
+    padding-top: 1.2vmax;
     padding-bottom: 1vmax;
     color: #fff;
     opacity: 0;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10%;
     transition: all 0.5s ease-out 0s;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
@@ -63,8 +64,8 @@
     font-size: 1.25vmax;
     font-weight: 700;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0 0 8px 0;
+    text-transform: capitalize;
+    margin: 0 0 0.4vw 0;
     opacity: 0;
     transform: rotate(-90deg);
     transition: all 0.1s ease-in-out 0.2s;

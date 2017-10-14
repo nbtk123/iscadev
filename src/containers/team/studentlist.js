@@ -50,7 +50,7 @@ export var studentlist = [
 {
     'name': 'Gabriela Rolnik',
     'subtitle': '',
-    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.  t/v/t1.0-1/p240x240/11425242_457498594410924_7147612685855763735_n.jpg?oh=2687b6e28d0fb354a1343368065ffb55&oe=5A7D7232',
+    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/p240x240/11425242_457498594410924_7147612685855763735_n.jpg?oh=2687b6e28d0fb354a1343368065ffb55&oe=5A7D7232',
     'year': "2015"
 },
 {
@@ -272,7 +272,7 @@ export var studentlist = [
 {
     'name': 'Shay Aviani',
     'subtitle': '',
-    'imgsrc': '',
+    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/12341492_1202150736468208_2817346122286541041_n.jpg?oh=eeb1da7f40f2ba66fba00cd8f13a8188&oe=5A826F69',
     'year': '2017'
 },
 {

@@ -59,7 +59,7 @@ class NavBar extends Component {
                         </div>
                         <div className={this.state.navbarImageDivClassName}>
                             <a href="/" className="navbar-logo-href">
-                                <img src={require('../../../public/logo.png')} height="70vw"/>
+                                <img src={require('../../../public/logo.png')} height="70vw" style={{'marginLeft':'16px'}}/>
                             </a>
                         </div>
                         <ul className={this.state.topNavbarMenuClassName}>

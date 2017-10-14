@@ -29,6 +29,10 @@
   font-weight: 900;
 }
 
+.video-grid-item-subtitle-text {
+  font-weight: 700;
+}
+
 .video-grid-item-img {
   width: 327px;
   height: 181px;

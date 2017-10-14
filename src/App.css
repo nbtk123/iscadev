@@ -15,20 +15,20 @@
 }
 
 .primary-font-family {
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
 }
 
 .secondary-font-family {
-  font-family: 'Open Sans Condensed', sans-serif;
+  /* font-family: 'Open Sans Condensed', sans-serif; */
 }
 
-.bold {
+.bold, .bold * {
   font-weight: bold;
 }
 
 .App {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Quicksand', sans-serif; */
 }
 
 .App-logo {

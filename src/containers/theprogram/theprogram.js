@@ -9,9 +9,9 @@ class TheProgram extends Component {
     {
       title: "Syllabus",
       items: [
+        "Two academic credits \ Scholarship (for 2nd year students)",
         "Professional advocacy lectures given by ambassadors, professors and journalists",
         "Quarterly meetups at IDC Herzliya and The Israeli Ministry of Foreign Affairs",
-        "Minimum 30 Volunteering hours per semester",
         "Small to Medium teams according to student’s desires and skills",
         "80% of the work is done from home using ISCA’s technological platforms and networks",
         "20% of the work will be dedicated to personal projects in the field of Advocacy"
@@ -31,7 +31,8 @@ class TheProgram extends Component {
       title: "Candidates",
       items: [
         "Competent English speaker",
-        "Currently studying at IDC Herzliya [Why we ask for this].",
+        "Currently studying at IDC Herzliya",
+        "Minimum 30 Volunteering hours per semester",
         "Ability to work both from home and in a team.",
         "Committed to excellence and results driven "
       ]
@@ -40,8 +41,8 @@ class TheProgram extends Component {
 
   render() {
     return (
-      <div className="container theprogram-container">
-        <h2 className="theprogram-title primary-text-color">The Program:</h2>
+      <div className="container theprogram-container bold">
+        <h2 className="theprogram-title">The Program:</h2>
         <div className="container-fluid theprogram-boxes-container">
           <div className="col-md-4 theprogram-boxes-col"><TheProgramBox {... this.boxes[0]} /></div>
           <div className="col-md-4 theprogram-boxes-col"><TheProgramBox {... this.boxes[1]} /></div>

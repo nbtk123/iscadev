@@ -35,27 +35,7 @@ class Team2 extends Component {
     }
   }
 
-  prepareStudentsRows() {
-    this.studentsRows = [];
-    var b = 0;
-    var e = 8;
-
-    // Extract all lines in size of 8
-    while (e < this.state.students.length) {
-      this.studentsRows.push(this.state.students.slice(b, e));
-      b = e;
-      e += 8;
-    }
-
-    // Extract the last line, which is of size < 8
-    if (b < this.state.students.length) {
-      e = this.state.students.length;
-      this.studentsRows.push(this.state.students.slice(b, e));
-    }
-  }
-
   render() {
-    // this.prepareStudentsRows();
     return (
       <div className="container-fluid team2-container">
         <div className="row secondary-text-color">
@@ -73,19 +53,6 @@ class Team2 extends Component {
             }
             </div>
           </div>
-          // this.studentsRows.map((row, r) => {
-          //   return (
-          //     <div className="row team2-members-container" key={r}>
-          //       {
-          //     row.map(function (student, i) {
-          //       return (
-          //         <TeamMember2 {...student} key={i}/>
-          //       )
-          //     })
-          //   }
-          //     </div>
-          //   )
-          // })
         }
       </div>
     );

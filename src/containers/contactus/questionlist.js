@@ -8,7 +8,7 @@ class QuestionList extends Component {
         this.state = {
             questions: [
                 {
-                    question: "Can I join the program if i'm a student at another institution?",
+                    question: "Can I join the program if I'm a student at another institution?",
                     answer: "The academic program operates exclusively at IDC Herzliya and is due to expand to other universities during 2018. Until then, orientation for the scholarship program is open to any institution that is approved by the Council for Higher Education. If you wish to apply, please contact the National Union of Israeli Students <a href=\"http://www.nuis.co.il/%D7%A6%D7%A8%D7%95-%D7%A7%D7%A9%D7%A8-2/\">here</a>."
                 },
             ]

@@ -39,7 +39,7 @@ class PartnersPager extends Component {
 
     return (
       <div className="container-flow">
-        <h3 className="primary-text-color" style={{position:'relative', top:'3em'}}>Partners</h3>
+        <h3 className="bold" style={{position:'relative', top:'3em'}}>Our Partners</h3>
         <div className="partners-pager-container">
           <Slider ref={node => this.slider = node} {...settings} className="partners-pager">
             {
