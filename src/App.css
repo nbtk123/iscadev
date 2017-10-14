@@ -22,6 +22,16 @@
   /* font-family: 'Open Sans Condensed', sans-serif; */
 }
 
+@font-face {
+  font-family: 'carmela';
+  src:url('./carmela.eot');
+  src:url('./carmela.eot?#iefix') format('embedded-opentype'),url('./carmela.woff') format('woff'),url('./carmela.ttf') format('truetype');
+}
+
+.heb {
+  font-family: 'carmela'
+}
+
 .bold, .bold * {
   font-weight: bold;
 }
