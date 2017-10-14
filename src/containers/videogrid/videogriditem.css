@@ -29,8 +29,13 @@
   font-weight: 900;
 }
 
-.video-grid-item-subtitle-text {
+.video-grid-item-job-text {
   font-weight: 700;
+  margin-bottom: 0;
+}
+.video-grid-item-years-text {
+  font-weight: 700;
+  margin-top: 0;
 }
 
 .video-grid-item-img {

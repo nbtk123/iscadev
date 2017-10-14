@@ -54,6 +54,12 @@ export var studentlist = [
     'year': "2015"
 },
 {
+    'name': 'Aviad Hahami',
+    'subtitle': '',
+    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/1512398_10203743762053849_8807776346855848751_n.jpg?oh=11741376a915bab6133aa7e7ffdcf6a8&oe=5A7B71B3',
+    'year': "2015"
+},
+{
     'name': 'Robert Solom',
     'subtitle': '',
     'imgsrc': 'NO IMAGE',

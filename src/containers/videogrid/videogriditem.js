@@ -16,7 +16,8 @@ class VideoGridItem extends Component {
         </div>
         <div className="video-grid-item-text-container">
           <h2 className="video-grid-item-main-text">{this.props.name}</h2>
-          <h3 className="video-grid-item-subtitle-text">{this.props.subtitle}</h3>
+          <h3 className="video-grid-item-job-text">{this.props.job},</h3>
+          <h3 className="video-grid-item-years-text">{this.props.years}</h3>
           <h4>{this.props.about}</h4>
         </div>
       </div>
@@ -28,7 +29,8 @@ VideoGridItem.propTypes = {
   imgsrc: React.PropTypes.string.isRequired,
   videoUrl: React.PropTypes.string.isRequired,
   name: React.PropTypes.string.isRequired,
-  subtitle: React.PropTypes.string.isRequired,
+  job: React.PropTypes.string.isRequired,
+  years: React.PropTypes.string.isRequired,
   about: React.PropTypes.string.isRequired,
 };
 
