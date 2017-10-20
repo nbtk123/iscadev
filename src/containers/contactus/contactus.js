@@ -33,11 +33,10 @@ class ContactUs extends Component {
                     </div>
                     <h2 className="primary-text-color" style={{'textAlign':'center'}}>FAQ</h2>
                     <QuestionList />
-                    <hr className="faq-seperator"/>
-                    {/*<h2 className="primary-text-color" style={{'textAlign':'center'}}>Leave a message</h2>
-                    <ContactUsForm />*/}
 
-                    <div className="typeform-widget" data-url="https://iscadev.typeform.com/to/mDfesN" style={{width: '100%', height: '500px'}} >
+                    <hr className="faq-seperator"/>
+                
+                    <div className="typeform-widget" data-url="https://iscaidc.typeform.com/to/p8O69L" style={{width: '60em', height: '500px', 'padding':'0', 'margin':'auto'}} >
                     </div>
                     <script> {
                         (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
@@ -46,7 +45,7 @@ class ContactUs extends Component {
                     
                     <div className="row contactus-location-text primary-font-family">
                     Interdisciplinary Center (IDC) Herzliya | Community Programs | Israeli Students Combating Antisemetism  
-Public Benefit Company<br/>P.O.Box 167, Herzliya 4610101, Israel | www.isca.idc.ac.il | isca@idc.ac.il
+                    <br/>P.O.Box 167, Herzliya 4610101, Israel | www.isca.idc.ac.il | isca@idc.ac.il
                     </div>
                     <div className="row contactus-location-map">
                         <img src={require("../../../public/idc_map.png")}/>

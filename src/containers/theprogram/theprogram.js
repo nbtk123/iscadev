@@ -9,29 +9,30 @@ class TheProgram extends Component {
     {
       title: "Syllabus",
       items: [
-        "Two academic credits \ Scholarship (for 2nd year students)",
+        "Two academic credits",
         "Professional advocacy lectures given by ambassadors, professors and journalists",
         "Quarterly meetups at IDC Herzliya and The Israeli Ministry of Foreign Affairs",
-        "Small to Medium teams according to student’s desires and skills",
+        "Small to medium teams according to student’s skills and desires",
         "80% of the work is done from home using ISCA’s technological platforms and networks",
-        "20% of the work will be dedicated to personal projects in the field of Advocacy"
+        "20% of the work will be dedicated to personal projects"
       ]
     },
     {
       title: "Opportunities",
       items: [
         "Social network monitoring (Facebook, Youtube, twitter, etc.)",
-        "Academic research and writing for ISCA’s newsletter and website",
+        "Academic research and writing for ISCA’s newsletter, website, wikipedia educational effort",
         "Participation in professional committees (the Knesset / NGO’s)",
-        "Designing informative graphics \ Youtube videos",
-        "Developing and maintaining technological tools"
+        "Designing informative graphics",
+        "Editing and creating informative youtube videos",
+        "Developing and maintaining web applications"
       ]
     },
     {
       title: "Candidates",
       items: [
         "Competent English speaker",
-        "Currently studying at IDC Herzliya",
+        "Currently studying at IDC Herzliya [<a href='/contactus'>Why we ask for this</a>]",
         "Minimum 30 Volunteering hours per semester",
         "Ability to work both from home and in a team.",
         "Committed to excellence and results driven "

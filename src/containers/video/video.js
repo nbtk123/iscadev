@@ -21,7 +21,7 @@ class Video extends Component {
                                             ISCA <span style={{fontSize:'0.5em'}}>Academic Program</span>
                                         </h1>
                                         <h2 className="heb" style={{'marginTop':'0'}}>התכנית האקדמית למאבק באנטישמיות</h2>
-                                        <h2 className="secondary-font-family" style={{'marginTop':'0'}}>Your path to shaping online discourse starts here</h2>
+                                        <h2 className="secondary-font-family" style={{'marginTop':'0', 'fontSize':'2em'}}>Your path to shaping online discourse starts here</h2>
                                     </div>
                                     <div className="col-lg-4 col-md-4 col-xs-4 video-read-more">
                                         <PageButton text="Read More" onClick={(e) => PubSub.publish(events.NAVBAR_LINK_CLICK, '/#about')}/>

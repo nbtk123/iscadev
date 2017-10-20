@@ -15,9 +15,9 @@ class VideoGridItem extends Component {
           </div>
         </div>
         <div className="video-grid-item-text-container">
-          <h2 className="video-grid-item-main-text">{this.props.name}</h2>
-          <h3 className="video-grid-item-job-text">{this.props.job},</h3>
-          <h3 className="video-grid-item-years-text">{this.props.years}</h3>
+          <h3 className="video-grid-item-main-text">{this.props.name}</h3>
+          <h4 className="video-grid-item-job-text">{this.props.job}</h4>
+          <h4 className="video-grid-item-years-text">{this.props.years}</h4>
           <h4>{this.props.about}</h4>
         </div>
       </div>

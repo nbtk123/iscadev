@@ -11,7 +11,7 @@ class TheProgramBox extends Component {
           {
             this.props.items.map(((item, i) => {
               return (
-                <li key={i} className="theprogrambox-li"><h4>{item}</h4></li>
+              <li key={i} className="theprogrambox-li" dangerouslySetInnerHTML={{__html: "<h4>"+item+"</h4>"}}></li>
               )
             }))
           }

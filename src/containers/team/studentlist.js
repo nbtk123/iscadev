@@ -21,7 +21,7 @@ export var studentlist = [
     'name': 'Roy Meirom',
     'subtitle': 'Founder & Chairman',
     'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/p240x240/15327395_10157786220500150_2326042848380465891_n.jpg?oh=2c28e610591ef335c0aff2b0fa6df95c&oe=5A874ADD',
-    'year': "2015"
+    'year': ""
 },
 {
     'name': 'Ram Penkar',
@@ -42,21 +42,39 @@ export var studentlist = [
     'year': "2017"
 },
 {
+    'name': 'Bar Cohen',
+    'subtitle': 'Program Coordinator',
+    'imgsrc': 'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/21764761_1678307175522397_8771246474723102330_n.jpg?oh=f05163d8404077e8c806aa75c76e0710&oe=5A82569F',
+    'year': '2018'
+},
+{
     'name': 'Nir Barzilay',
     'subtitle': 'Tech Lead',
     'imgsrc': 'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/14708230_10209416908912484_2331691289157899122_n.jpg?oh=c880bd8635a961645cbf2529e5c3fe93&oe=5A8622BC',
     'year': '2017'
 },
 {
+    'name': 'Gideon Bachar',
+    'subtitle': 'Program Advisor',
+    'imgsrc': require('../../../public/team_pics/gideon_bachar.jpg'),
+    'year': ""
+},
+{
+    'name': 'Ido Daniel',
+    'subtitle': 'Program Advisor',
+    'imgsrc': require('../../../public/team_pics/ido_daniel.png'),
+    'year': ""
+},
+{
+    'name': 'Tomer Aldubi',
+    'subtitle': 'Program Advisor',
+    'imgsrc': require('../../../public/team_pics/tomer_aldubi.png'),
+    'year': ""
+},
+{
     'name': 'Gabriela Rolnik',
     'subtitle': '',
     'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/p240x240/11425242_457498594410924_7147612685855763735_n.jpg?oh=2687b6e28d0fb354a1343368065ffb55&oe=5A7D7232',
-    'year': "2015"
-},
-{
-    'name': 'Aviad Hahami',
-    'subtitle': '',
-    'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/1512398_10203743762053849_8807776346855848751_n.jpg?oh=11741376a915bab6133aa7e7ffdcf6a8&oe=5A7B71B3',
     'year': "2015"
 },
 {
@@ -267,12 +285,6 @@ export var studentlist = [
     'name': 'Barak Ben Hakon',
     'subtitle': '',
     'imgsrc': 'https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-1/c79.721.1324.1324/456630_142433285892587_385681078_o.jpg?oh=b798db69720fa388d630379c5a955e72&oe=5A836492',
-    'year': '2017'
-},
-{
-    'name': 'Bar Cohen',
-    'subtitle': 'Program Coordinator',
-    'imgsrc': 'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/21764761_1678307175522397_8771246474723102330_n.jpg?oh=f05163d8404077e8c806aa75c76e0710&oe=5A82569F',
     'year': '2017'
 },
 {

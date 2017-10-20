@@ -99,7 +99,7 @@ class App extends Component {
         <div className="row" ref={node => this.aftergraduate = node}>
           <AfterGraduate />
         </div>
-        <div className="row" ref={node => this.register = node} id="register">
+        <div className="row" ref={node => this.register = node} id="apply">
           <TypeformRegistration />
         </div>
         <div className="row" ref={node => this.footer = node}>
