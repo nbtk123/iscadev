@@ -14,7 +14,7 @@ class VideoGrid extends Component {
               imgsrc : require('../../../public/testimonies/gabi.jpg'),
               videoUrl : "https://www.youtube.com/embed/XGSy3_Czz8k",
               name : "Gabriela Rolnik",
-              job : "Wikipedia Lead",
+              job : "Wikipedia Team",
               about : "During the two years that I volunteered at ISCA, I was able to influence people's knowledge about Jewish culture, history and heritage. If you know foreign languages and want to make a real change in foreign societies, ISCA offers multiple opportunities to do so. "
             },
             {

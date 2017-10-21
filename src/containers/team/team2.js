@@ -21,6 +21,7 @@ class Team2 extends Component {
 
   componentWillMount() {
     this.TOKEN_NAVBAR_LINK_CLICK = PubSub.subscribe(events.NAVBAR_LINK_CLICK, this.onNavbarLinkClick);
+    this.props.route.onHighlightChanged({highlighted:'team'});
   }
 
   componentWillUnmount() {
@@ -39,7 +40,10 @@ class Team2 extends Component {
     return (
       <div className="container-fluid team2-container">
         <div className="row secondary-text-color">
-          <h1 className="col-md-12 team2-title">Team</h1>
+          <h1 className="col-md-12 team2-title">Meet The Team</h1>
+        </div>
+        <div className="container">
+          <h4 className="primary-text-color team2-subtitle">Our team is committed to making the internet a hate free environment.<br/>We love what we do and who we do it with.</h4>
         </div>
         {
           <div className="container team2-members-container">

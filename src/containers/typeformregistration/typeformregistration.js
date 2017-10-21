@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 
+import './typeformregistration.css';
+
 class TypeformRegistration extends Component {
+
+  componentDidMount() {
+    var timer = setInterval(() => {
+      var iframe = document.getElementById("typeform-registration-container").getElementsByTagName("iframe")[0];
+      if (iframe) {
+          iframe.setAttribute("scrolling","no");
+          clearInterval(timer);
+      }
+    }, 1000)
+  }
+
   render() {
     return (
-      <div className="container-fluid secondary-bg-color typeform-registration-container">
+      <div className="container-fluid secondary-bg-color typeform-registration-container" id="typeform-registration-container">
         <div className="col-md-12" style={{'padding':'0em'}}>
-          <div className="typeform-widget" style={{'width': '100%', 'height': '500px'}} data-url="https://iscaidc.typeform.com/to/Vs4qwM" >
+          <div className="typeform-widget" style={{'width': '70em', 'height': '600px', margin:'auto'}} data-url="https://iscaidc.typeform.com/to/Vs4qwM" >
           </div>
           <script>
             {

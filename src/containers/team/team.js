@@ -8,11 +8,14 @@ class Team extends Component {
 
     componentWillMount() {
         Tabs.setUseDefaultStyles(false);
-        this.props.route.onHighlightChanged({highlighted:'about'});
     }
 
     handleSelect(index, last) {
         console.log('Selected tab: ' + index + ', Last tab: ' + last);
+    }
+
+    componentDidMount() {
+        this.props.route.onHighlightChanged({highlighted:'team'});
     }
 
     render() {

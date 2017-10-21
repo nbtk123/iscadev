@@ -17,11 +17,35 @@ var images = ['adi_chiki.jpg', 'arielle_ankri.jpg', 'aviad_hahami.jpg', 'ben_ros
 // })
 
 export var studentlist = [
-  {
+{
     'name': 'Roy Meirom',
     'subtitle': 'Founder & Chairman',
     'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/p240x240/15327395_10157786220500150_2326042848380465891_n.jpg?oh=2c28e610591ef335c0aff2b0fa6df95c&oe=5A874ADD',
     'year': ""
+},
+{
+    'name': 'Tomer Aldubi',
+    'subtitle': 'Director - ISCA scholarship Program',
+    'imgsrc': require('../../../public/team_pics/tomer_aldubi.png'),
+    'year': ""
+},
+{
+    'name': 'Gideon Bachar',
+    'subtitle': 'Program Advisor',
+    'imgsrc': require('../../../public/team_pics/gideon_bachar.jpg'),
+    'year': ""
+},
+{
+    'name': 'Ido Daniel',
+    'subtitle': 'Program Advisor',
+    'imgsrc': require('../../../public/team_pics/ido_daniel.png'),
+    'year': ""
+},
+{
+    'name': 'Nir Barzilay',
+    'subtitle': 'Tech Lead',
+    'imgsrc': 'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/14708230_10209416908912484_2331691289157899122_n.jpg?oh=c880bd8635a961645cbf2529e5c3fe93&oe=5A8622BC',
+    'year': '2017'
 },
 {
     'name': 'Ram Penkar',
@@ -48,30 +72,6 @@ export var studentlist = [
     'year': '2018'
 },
 {
-    'name': 'Nir Barzilay',
-    'subtitle': 'Tech Lead',
-    'imgsrc': 'https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/14708230_10209416908912484_2331691289157899122_n.jpg?oh=c880bd8635a961645cbf2529e5c3fe93&oe=5A8622BC',
-    'year': '2017'
-},
-{
-    'name': 'Gideon Bachar',
-    'subtitle': 'Program Advisor',
-    'imgsrc': require('../../../public/team_pics/gideon_bachar.jpg'),
-    'year': ""
-},
-{
-    'name': 'Ido Daniel',
-    'subtitle': 'Program Advisor',
-    'imgsrc': require('../../../public/team_pics/ido_daniel.png'),
-    'year': ""
-},
-{
-    'name': 'Tomer Aldubi',
-    'subtitle': 'Program Advisor',
-    'imgsrc': require('../../../public/team_pics/tomer_aldubi.png'),
-    'year': ""
-},
-{
     'name': 'Gabriela Rolnik',
     'subtitle': '',
     'imgsrc': 'https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-1/p240x240/11425242_457498594410924_7147612685855763735_n.jpg?oh=2687b6e28d0fb354a1343368065ffb55&oe=5A7D7232',
@@ -80,7 +80,7 @@ export var studentlist = [
 {
     'name': 'Robert Solom',
     'subtitle': '',
-    'imgsrc': 'NO IMAGE',
+    'imgsrc': require('../../../public/team_pics/man_default.png'),
     'year': "2015"
 },
 {

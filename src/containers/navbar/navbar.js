@@ -70,7 +70,7 @@ class NavBar extends Component {
                                 <NavbarLink text="The Program" link="/#theprogram" highlighted={this.props.highlighted === 'theprogram'} />
                             </li>
                             <li className="navbar-menu-items-li">
-                                <NavbarLink text="Apply" link="/#apply" highlighted={this.props.highlighted === 'apply'} />
+                                <NavbarLink text="Apply" link="/#apply" highlighted={this.props.highlighted === 'register'} />
                             </li>
                             {/*<li className="navbar-menu-items-li">
                                 <NavbarLink text="Documents" link="/docs" highlighted={this.props.highlighted === 'docs'} />
@@ -79,7 +79,7 @@ class NavBar extends Component {
                                 <NavbarLink text="Team" link="/team" highlighted={this.props.highlighted === 'team'} />
                             </li>
                             <li className="navbar-menu-items-li">
-                                <NavbarLink text="FAQ" link="/contactus" highlighted={this.props.highlighted === 'email'} />
+                                <NavbarLink text="FAQ" link="/contactus" highlighted={this.props.highlighted === 'contactus'} />
                             </li>
                             <li className="navbar-menu-items-li">
                                 <NavbarLink text="" fontawesome="fa fa-facebook" link="https://www.facebook.com/ISCAorg/" highlighted={this.props.highlighted === 'facebook'} />

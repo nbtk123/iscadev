@@ -15,19 +15,18 @@
     border-color: #0074B2;
 }
 
-.contactus-location-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom:5em;
-    background-color: #0074B2;
-    padding-top: 5em;
-    padding-bottom: 5em;
+.contactus-typeform-container {
+    margin-top: 5em;
+}
+
+/* Trying to hide typeform ugly scrollbar, this is the HTML5 way */
+.contactus-typeform-container iframe{
+    overflow: hidden;
 }
 
 .contactus-location-text {
     padding-top: 5em;
     padding-bottom: 2em;
-    color: #b1d5f8;
     font-size: 18px;
 }
 
@@ -41,5 +40,4 @@
     align-items: center;
     align-content: center;
     text-align: center;
-    background-color: #0074B2;
 }
