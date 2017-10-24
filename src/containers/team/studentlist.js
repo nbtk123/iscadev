@@ -25,7 +25,7 @@ export var studentlist = [
 },
 {
     'name': 'Tomer Aldubi',
-    'subtitle': 'Director - ISCA scholarship Program',
+    'subtitle': 'Scholarship Program Director',
     'imgsrc': require('../../../public/team_pics/tomer_aldubi.png'),
     'year': ""
 },
